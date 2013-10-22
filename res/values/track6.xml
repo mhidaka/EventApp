@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="track6">
+        <item >@array/track6_sub0</item>
+        <item >@array/track6_sub1</item>
+        <item >@array/track6_sub2</item>
+        <item >@array/track6_sub3</item>
+        <item >@array/track6_sub4</item>
+        <item >@array/track6_sub5</item>
+        <item >@array/track6_sub6</item>
+    </array>
+
+    <string-array name="track6_sub0" >
+       <item>トラック会場６</item>
+       <item>教室番号0227/0228 1227/1228教室</item>
+    </string-array>
+
+
+    <string-array name="track6_sub1" >
+        <item>13:00～13:40</item>
+        <item>「Ameba」サービスの舞台裏　Android編</item>
+        <item>この１年、サイバーエージェントでは「Ameba」にて100以上のスマートフォン向けサービスを創ってきました。 その過程での様々な取り組みや創っていく中で見えてきた課題、そしてその解決策をAndroid技術者の視点より紹介させて頂きたいと思います。</item>
+        <item>藤原聖</item>
+        <item>株式会社サイバーエージェント アメーバ事業本部 チーフネイティブエンジニア Androidエンジニア</item>
+    </string-array>
+
+    <string-array name="track6_sub2" >
+        <item>13:55～14:35</item>
+        <item>！(びっくり)するかもしれないヤフーでのアプリ開発</item>
+        <item>ヤフーではスマートデバイスへのシフトを掲げて、特にアプリ開発にフォーカスしています。 こんな時どうしているのか、どうやってアプリの改善をしているかなど社内でのAndroidアプリ開発の事例について紹介します。</item>
+        <item>筒井 俊祐 (Shunsuke Tsutsui)</item>
+        <item>ヤフー株式会社 CMO室　ヤフー黒帯認定制度 黒帯(Androidアプリ開発)</item>
+    </string-array>
+
+    <string-array name="track6_sub3" >
+        <item>14:50～15:30</item>
+        <item>mBaaSを活用したアプリ開発の新たな潮流</item>
+        <item>スマートフォンの普及により爆発的な勢いで広まるスマホアプリ市場。様々なアプリ が氾濫し、マーケットでの差別化も非常に難しくなってきています。そのような中、 アプリの差別化ポイントはクライアントアプリの作りによるところが大きく、サーバ側 の機能はどのアプリでも汎用化できるのではないかという考えに基づき、現在米国を中心 に注目されているサービスがmBaaS【mobile Backend as a Service】です。 mBaaSはスマホアプリのサーバ側機能を、クラウド上で提供する新しいクラウドサービスです。 このサービスを使う事でサーバ側の開発が不要になり、開発者はクライアントアプリの開発に注力 できるようになります。 本セッションでは、ニフティが提供するmBaaSサービス 「ニフティクラウド mobile backend」とは どのようなものか、そして活用する事でどのようなメリットがあるのか、事例を交えて解説したいと思います。</item>
+        <item>野田 雄也</item>
+        <item>ニフティ株式会社クラウドプラットフォーム部 エンジニア</item>
+    </string-array>
+
+    <string-array name="track6_sub4" >
+        <item>15:45～16:25</item>
+        <item>BaaSで成し遂げるアプリ制作のイノベーションとアプリのマネタイズについて</item>
+        <item>appCの最新サービスとマネタイズ事例をお話させていただく予定です。</item>
+        <item>糸賀祐樹</item>
+        <item>カイト株式会社　シニアプロデューサー</item>
+        <item>倉持貴明</item>
+        <item>カイト株式会社　システムエンジニア</item>
+    </string-array>
+
+    <string-array name="track6_sub5" >
+        <item>16:40～17:20</item>
+        <item>「うわっ…私の開発、速すぎ？」ライブコーディングでわかるMBaaS 利用パターン</item>
+        <item>MBaaS（Mobile Backend As A Service）という言葉も一般的になってきましたが、まだ使ったことがない方や、実際にどう使えばいいのかわからない方に向けて、弊社が提供する Kii Cloudの SDKをアプリから使用する例をライブコーディングでお見せします。また、弊社が提供する中国へのアプリ展開サービスの説明もする予定です。 MBaaSでなにができるのか見てみたい方、中国へのアプリ展開に興味のある方のご参加をお待ちしております。</item>
+        <item>石塚進</item>
+        <item>Kii株式会社 エンジニアリングディレクター</item>
+        <item>熊野聡</item>
+        <item>Kii株式会社 エンジニア</item>
+    </string-array>
+
+    <string-array name="track6_sub6" >
+        <item>17:35～18:15</item>
+        <item>広告側から見た良いアプリとその運用方法</item>
+        <item>アプリケーションだけで収益をたてられている方も増えてきていますが、そこでちゃんとお金を稼げているアプリはどういう物があるのか。 どうしたらもっと収益を建てられるようになるのかをトークセッションとしてお話したいと思います。 ※ポロりもあるかもしれませんが、原則つぶやき、Facebook無しでお願いします。いいか、絶対つぶやくなよ？いいか絶対つぶやくなよ！？ 会場に広告業界系の人がいたら巻き込みますのであしからず。</item>
+        <item>S</item>
+        <item>六本木ヒルズ内にある某Gのつく会社の覆面男</item>
+        <item>森嶋　大樹</item>
+        <item>United　株式会社　SSP事業部　プロデューサー</item>
+        <item>成田 繁泰</item>
+        <item>株式会社ファンコミュニケーションズ　ADN事業部　営業推進部　営業推進2課　チームリーダー</item>
+        <item>山田　雄介</item>
+        <item>株式会社メタップス シニア コンサルタント</item>
+    </string-array>
+
+</resources>

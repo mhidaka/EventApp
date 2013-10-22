@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="track1">
+        <item >@array/track1_sub0</item>
+        <item >@array/track1_sub1</item>
+        <item >@array/track1_sub2</item>
+        <item >@array/track1_sub3</item>
+        <item >@array/track1_sub4</item>
+        <item >@array/track1_sub5</item>
+        <item >@array/track1_sub6</item>
+    </array>
+
+    <string-array name="track1_sub0" >
+       <item>トラック会場１</item>
+       <item>教室番号0204 1204教室</item>
+    </string-array>
+
+    <string-array name="track1_sub1" >
+        <item>13:00～13:40</item>
+        <item>コンパウンドドキュメント環境としてのMOONPhaseのパラダイム</item>
+        <item>enchantMOONが採用するOS、MOONPhaseは、従来のOSとは全く異なる概念でコンパウンド・ドキュメントを実現したOSである。 Undoやカット&#38;ペーストといった基本的な機能までアプリケーションとして独立して提供可能なアーキテクチャによって、 何を目指しているのかを解説させていただきます。</item>
+        <item>清水 亮</item>
+        <item>株式会社ユビキタスエンターテインメント 代表取締役社長</item>
+    </string-array>
+
+    <string-array name="track1_sub2" >
+        <item>13:55～14:35</item>
+        <item>Derimoで位置情報モニタリング</item>
+        <item>Derimo（デリモ）は、 M2Mをソフトウェアフレームワークで実現したものです。 移動機とするAndroid機（クライアント側）のGPSを利用し、 モニタリング機とする別のAndroid機（コントロール側）に Google Mapと連動させてマッピングすることで クライアントの位置情報をモニタリングできるソフトウェア 「Derimo Location Kit」をご紹介します。</item>
+        <item>畑中豊司</item>
+        <item>株式会社データ変換研究所 代表取締役</item>
+    </string-array>
+
+    <string-array name="track1_sub3" >
+        <item>14:50～15:30</item>
+        <item>Androidを活用したへッドマウントディスプレイ</item>
+        <item>拡張現実を実現するヘッドマウントディスプレイ「MOVERIO」に活用された技術のご紹介、シースルーを可能にしたMOVERIOによるサービス拡大の可能性をご紹介します。</item>
+        <item>津田敦也</item>
+        <item>セイコーエプソン（株）ビジュアルプロダクツ事業部、ＨＭＤ事業推進部部長</item>
+    </string-array>
+
+    <string-array name="track1_sub4" >
+        <item>15:45～16:25</item>
+        <item>Google Glass ～ ウェアラブル時代の到来に向けて</item>
+        <item>2013年、「Google Glass」の登場により、ヘッド・マウント・ディスプレイ(HMD)に代表される「ウェアラブル・コンピューティング」が活発化しています。本講演では、有山が今年の５月、米国滞在中に入手した「開発者向けGoogle Glass」をベースに、その機能と考えられる用途。そして、今後訪れるウェアラブル時代にAndroidの果たし得る役割について考察します。</item>
+        <item>有山 圭二</item>
+        <item>大阪市のソフトウェア開発会社「有限会社シーリス」代表</item>
+    </string-array>
+
+    <string-array name="track1_sub5" >
+        <item>16:40～17:20</item>
+        <item>miramaの未来</item>
+        <item>拡張現実を実現するウェアラブルデバイス「mirama」が目指す未来とロードマップについて紹介します。</item>
+        <item>近藤昭雄</item>
+        <item>株式会社ブリリアントサービス 取締役</item>
+    </string-array>
+
+    <string-array name="track1_sub6" >
+        <item>17:35～18:15</item>
+        <item>BeagleBone BlackでAndroidの下回りを学ぼう</item>
+        <item>BeagleBone Blackは、5000円以下で購入できる名刺サイズのボードです。 オープンハードウエアとして開発されており、日本でも簡単に入手できます。 ちいさなボードですが、Androidだけでなく、UbuntuやDebianなどのLinux環境も動作させることできます。 このボードを使ったAndroidのシステム開発方法について紹介します。 chromecastモドキのデモも行う予定です。バザール会場での展示も行っています。</item>
+        <item>きんねこ</item>
+        <item>某周辺機器メーカー</item>
+    </string-array>
+
+</resources>

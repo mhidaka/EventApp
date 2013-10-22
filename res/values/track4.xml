@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="track4">
+        <item >@array/track4_sub0</item>
+        <item >@array/track4_sub1</item>
+        <item >@array/track4_sub2</item>
+        <item >@array/track4_sub3</item>
+        <item >@array/track4_sub4</item>
+        <item >@array/track4_sub5</item>
+        <item >@array/track4_sub6</item>
+    </array>
+
+    <string-array name="track4_sub0" >
+       <item>トラック会場４</item>
+       <item>教室番号0213/0214 1213/1214教室</item>
+    </string-array>
+
+    <string-array name="track4_sub1" >
+        <item>13:00～13:40</item>
+        <item>こんなAndroidデバイスに期待！[学生部コーディネート]</item>
+        <item>わが国では通信事業者を中心としたモバイルサービス環境が整っている一方で、Android OSを搭載した端末の開発というと、どうしてもスマートフォンやスマートタブレットの域から飛び出すような端末が発売されないのが惜しまれる。海外の事情や、その他の通信環境なども踏まえ「こんなデバイスがあったら面白いんじゃ?!」という持論を展開する！</item>
+        <item>木暮 祐一</item>
+        <item>青森公立大学経営経済学部 准教授</item>
+    </string-array>
+
+    <string-array name="track4_sub2" >
+        <item>13:55～14:35</item>
+        <item>「失敗はシャンパンで祝おう -新サービス立ち上げの舞台裏」[学生部コーディネート] </item>
+        <item>新卒で入社し2年半、新規サービスの立ち上げ・運営を繰り返してきた中で学んだことを、特に学生の方向けにお話しできればと思います。</item>
+        <item>中澤 理香</item>
+        <item>株式会社ミクシィ</item>
+    </string-array>
+
+    <string-array name="track4_sub3" >
+        <item>14:50～15:30</item>
+        <item>安全なAndroidアプリの作り方を教えます！[JSSECコラボレーションセッション]</item>
+        <item>「ウィルスチェックさえすればAndroidアプリの安全性は確保されるのか？」 アプリに組み込まれたウィルスや脆弱性の危険性が騒がれている昨今、アプリ開発者として 何をやるべきか、何ができるのかをお話します。アプリ開発者向けのJSSEC『Androidアプリ のセキュア設計・セキュアコーディングガイド』を編纂している講演者が、アプリ開発者に ガイドをどのように活用してもらえるのか？またそれを支える効果的なプロセスやツールに ついて分かり易く紹介します。</item>
+        <item>松並 勝</item>
+        <item>日本スマートフォンセキュリティ協会（JSSEC）技術部会 セキュアコーディンググループリーダー</item>
+    </string-array>
+
+    <string-array name="track4_sub4" >
+        <item>15:45～16:25</item>
+        <item>Thinking about CSS Architecture [html５j コラボレーションセッション]</item>
+        <item>SassのようなCSSプリプロセッサの登場によって、CSSを書く作業が楽になったという声を聞きます。しかし、実際にはその前提としてCSSとしての設計が甘ければ、CSSの無駄な肥大化や、保守性の低下などを招きます。まずは「ちゃんとCSSを書く」ために、ケーススタディ、フレームワークの紹介をします。</item>
+        <item>谷 拓樹</item>
+        <item>株式会社サイバーエージェント Webディベロッパー</item>
+    </string-array>
+
+    <string-array name="track4_sub5" >
+        <item>16:40～17:20</item>
+        <item>メイキング・オブ・デーモントライヴ ： Unityによるハイエンドモバイルゲーム制作（CEDEC2013リメイク）[CEDEC コラボレーションセッション]</item>
+        <item>Unityを使ってハイエンドなモバイルゲームを制作することがどういうことで、どんな問題点が生じやすいか、といった内容をメインとする事例紹介。シェーダー制作に関するTIPSもあります。Unity上での工夫についての事例も多数紹介します。 【樋口様の講演スライドはこちら→https://www.dropbox.com/sh/jmxy5lxmfyirp65/PZdJLdOpCX】</item>
+        <item>樋口 雄一</item>
+        <item>株式会社セガネットワークス アート＆デザイン部リードデザイナー</item>
+    </string-array>
+
+    <string-array name="track4_sub6" >
+        <item>17:35～18:15</item>
+        <item>MCPC モバイルクラウド委員会で考えるスマホアプリケーション [MCPCコラボレーションセッション]</item>
+        <item>ＭＣＰＣモバイルクラウド委員会では、現在顕著化しつつある社会課題解決を モバイルとクラウドの組み合わせで行い、少しでも社会貢献できる リファレンススマホアプリの創造に取り組んでいます。 現在取り組んでいる課題は、車椅子やベビーカーなどの交通弱者が安心して 通れる道を案内する「交通弱者向け進化する地図構想」です。 この構想は横浜市のご協力もいただきながら進めています。 今回は、ＭＣＰＣモバイルクラウド委員会の最新活動紹介と これら具体の取り組み内容を紹介し、 日本アンドロイドの会の皆さんからのご指摘やご協力を いただきたいと考えます。 さらに、ＭＣＰＣモバイルクラウド委員会ＣＩＳ－ＷＧでアイデア出し しているドライブアシスタンスロボット構想やＩＴＳ連携など、 スマートフォンアプリケーションがクルマの運転やドライバーを アシストしていく将来をお話し、構想共有を計りたいと考えます。</item>
+        <item>柏山 正守</item>
+        <item>MCPCモバイルクラウド委員会副委員長CIS-WG主査 (株)日立製作所 情報通信システム社 CIS本部 部長</item>
+    </string-array>
+
+</resources>

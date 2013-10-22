@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="track2">
+        <item >@array/track2_sub0</item>
+        <item >@array/track2_sub1</item>
+        <item >@array/track2_sub2</item>
+        <item >@array/track2_sub3</item>
+        <item >@array/track2_sub4</item>
+        <item >@array/track2_sub5</item>
+        <item >@array/track2_sub6</item>
+    </array>
+
+    <string-array name="track2_sub0" >
+       <item>トラック会場２</item>
+       <item>教室番号0205 1205教室</item>
+    </string-array>
+
+
+    <string-array name="track2_sub1" >
+        <item>13:00～13:40</item>
+        <item>質の高いUXを実現するためにやるべきこと</item>
+        <item>ソフトウェア開発のプロジェクトでは技術的制約やマーケティング戦略の枠組みの中でユーザが求めるUXを検討する必要がある。しかし立場の異なるメンバーが互いに共感しながら検討を進めることは難しい。 本講演では、様々な関係者がメンバーとして参画するプロジェクトにおいて、ユーザが求めるUXを実現するためにやるべきことをベストプラクティスに基づき紹介する。</item>
+        <item>今村 健</item>
+        <item>Surface &#38;Architecture UXデザイナー</item>
+    </string-array>
+
+    <string-array name="track2_sub2" >
+        <item>13:55～14:35</item>
+        <item>「理論で分かる、デザインのファーストステップ」あんざいゆき x 小太刀御禄 対談</item>
+        <item>Effective Android 正式公開版に掲載される小太刀御禄の記事について、あんざいゆきと小太刀御禄があれこれ話します。</item>
+        <item>あんざいゆき</item>
+        <item>株式会社ウフィカ 代表取締役</item>
+        <item>小太刀御禄</item>
+        <item>イラストレーター・デザイナー</item>
+    </string-array>
+
+    <string-array name="track2_sub3" >
+        <item>14:50～15:30</item>
+        <item>Androidのデザインパターンとアンチデザインパターン</item>
+        <item>先日監訳させて頂いた『Smashing Android UI - レスポンシブUIとデザインパターン』（インプレスジャパン）の内容をもとに、Android向けのアプリデザインを行う時に使うべきデザインのパターンと、使ってはいけないパターン（アンチデザインパターン）について解説します。</item>
+        <item>佐藤 伸哉</item>
+        <item>AKQA　Group User Experience Director</item>
+    </string-array>
+
+    <string-array name="track2_sub4" >
+        <item>15:45～16:25</item>
+        <item>知っておきたい、画像データ圧縮の仕組みと特長 ～ETC とPVRTC～</item>
+        <item>ABC2013 Spring で講演した『知っておきたい、画像データ圧縮の仕組みと特長 ～DXTC とPVRTC～』の続編です。 プログラマや技術的興味のある方を対象に、Android 全機種で使用できる画像圧縮方式「ETC」の原理と、前回解説した「PVRTC」についても更に掘り下げて解説します。 Android・iOS マルチ対応アプリ開発における画像管理の運用上のちょっとしたコツなどもご紹介します。</item>
+        <item>小野 知之</item>
+        <item>株式会社ウェブテクノロジ R &#38;D部 マネージャー</item>
+    </string-array>
+
+    <string-array name="track2_sub5" >
+        <item>16:40～17:20</item>
+        <item>HTML5ベースのハイパフォーマンスUIフレームワークOnsen UIデビュー！ ～Androidでもサクサク動くハイブリッドアプリのUIを簡単実装～</item>
+        <item>HTML5を用いたハイブリッドアプリ開発は、プラットフォーム毎にObjective-CやJavaといったネイティブ言語を習得する必要がないという利点がある一方で、画面作成が難しい、画面遷移時のアニメーション動作を最適化することが難しい、といったUI表現に関連する課題を抱えています。 本セッションでは、アシアルがオープンソースとして公開したモバイルアプリUIフレームワークOnsen UIを用いて、HTMLベースのシンプルなコードで簡単に洗練されたハイブリッドアプリのUI表現を実装する方法をご紹介いたします。</item>
+        <item>生形 可奈子</item>
+        <item>アシアル株式会社　Monacaエバンジェリスト</item>
+    </string-array>
+
+    <string-array name="track2_sub6" >
+        <item>17:35～18:15</item>
+        <item>（仮）</item>
+        <item>（調整中）</item>
+        <item>name</item>
+        <item>org</item>
+    </string-array>
+
+</resources>

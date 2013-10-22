@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="track5">
+        <item >@array/track5_sub0</item>
+        <item >@array/track5_sub1</item>
+        <item >@array/track5_sub2</item>
+        <item >@array/track5_sub3</item>
+        <item >@array/track5_sub4</item>
+        <item >@array/track5_sub5</item>
+        <item >@array/track5_sub6</item>
+    </array>
+
+    <string-array name="track5_sub0" >
+       <item>トラック会場５</item>
+       <item>教室番号0224 1224教室</item>
+    </string-array>
+
+    <string-array name="track5_sub1" >
+        <item>13:00～13:40</item>
+        <item>上海Androidの会の紹介と中国の最新スマフォ事情</item>
+        <item></item>
+        <item>John石井</item>
+        <item>中尾貴光（ビデオ出演）</item>
+    </string-array>
+
+    <string-array name="track5_sub2" >
+        <item>13:55-14:35</item>
+        <item>NFCのアレコレ/他</item>
+        <item>佐藤勝彦　(10分)\n「調整中」 \n三宅理 / inuchin　(30分)\n「ＮＦＣのアレコレ」</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="track5_sub3" >
+        <item>14:50～15:30</item>
+        <item>ロボットサミット（１）－（６）</item>
+        <item>（調整中）</item>
+        <item>清水 素釘武と愉快な仲間たち</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="track5_sub4" >
+        <item>15:45～16:25</item>
+        <item>LTセッション</item>
+        <item>山田宏\n「情報再配信プラットフォームNN4を用いたANDROIDアプリ開発」\nfkm\n「来週読めるAndroidアプリコードの書き方」\n大坂泰弘\n「回想支援ツール、NFC仏壇を作ってみた」\n清水喜弘\n「Android USBカメラ接続」\n泉芳樹\n「Continue-Cube」\n丸山拓馬\n「アプリを簡単に量産できるプラグイン！」</item>
+        <item>（準備1分・発表5分）</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="track5_sub5" >
+        <item>16:40～17:20</item>
+        <item>LTセッション</item>
+        <item>gaku　(20分)\n「アンドロイドアプリ脆弱性検知サービス Tao RiskFinderについて」\n山本直也　(10分)\n「Kwikでつくる絵本-インタラクティブブックの紹介」\nmhidaka　(5分)\n「ABC2013aのカンファレンスアプリを作ってみたよ」\nつくる女　(5分)\n「クリエイターチームつくる女の紹介/メンバー自己紹介」</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="track5_sub6" >
+        <item>17:35～18:15</item>
+        <item>支部関連LTセッション</item>
+        <item>なかざん\n「農業IT界隈の現在（仮称）」\n佐藤憲司\n「日本Androidの会 埼玉支部から生まれたバンプレコーダー、コミュニティから事業会社発足までの道のり」\n岩倉男子\n「香川支部の紹介」\nまーくん\n「とびだせ！浜松支部」\n本田崇人\n「熊本支部の紹介」</item>
+        <item>（準備1分・発表5分）</item>
+        <item></item>
+    </string-array>
+
+</resources>

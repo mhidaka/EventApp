@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="track0">
+        <item >@array/track0_sub0</item>
+        <item >@array/track0_sub1</item>
+        <item >@array/track0_sub2</item>
+        <item >@array/track0_sub3</item>
+        <item >@array/track0_sub4</item>
+        <item >@array/track0_sub5</item>
+        <item >@array/track0_sub6</item>
+        <item >@array/track0_sub7</item>
+        <item >@array/track0_sub8</item>
+    </array>
+
+    <string-array name="track0_sub0" >
+       <item>基調講演会場</item>
+       <item>丹波ホール</item>
+    </string-array>
+
+    <string-array name="track0_sub1" >
+        <item>10:00～10:15</item>
+        <item>開会の挨拶</item>
+        <item>Android Bazarr &#38; Conference 2013 Autumn 開催にあたって、実行委員長より　開会のご挨拶</item>
+        <item>石塚　宏紀</item>
+        <item>ABC2013 Autumn　実行委員長</item>
+    </string-array>
+
+    <string-array name="track0_sub2" >
+        <item>10:15～10:45</item>
+        <item>Next Billion --- Androidへの期待と技術革新の新しい地平</item>
+        <item>「Next Billion（次の10億人）」という言葉は、ここ数年の間に、10億人以上のひとが、クラウド・デバイスを持ち、新たにインターネットに接続するようになるだろうという時代の流れを表したものです。 この流れは、10億人でとどまる訳ではなく、2000年代の最初の10年での携帯電話の普及がそうであったように、2010年代を通じて、やむことなく進むと思います。この変化を、中心となって担うデバイスは、Androidだと思います。 こうした変化は、世界のコミュニケーションと情報共有のスタイルを大きく変え、経済の世界にも大きなインパクトを与える、歴史的なものです。講演では、こうした時代の中で、技術的にはどのような新しい変化が起きているのかを概観したいと思います。 ・Packaged Web App：サーバーとクライアントの役割の見直し ・Spanner：大規模分散データベースでの整合性の確保 ・D-Wave：新しいスタイルの量子コンピュータの登場 ・Web Component等：ポストHTML5 最後に、日本のIT技術者に、Next Billionのグローバルな世界での活躍に期待したいと思います。</item>
+        <item>丸山 不二夫</item>
+        <item>特定非営利活動法人　日本Androidの会　名誉会長</item>
+    </string-array>
+
+    <string-array name="track0_sub2" >
+        <item>10:45～11:15</item>
+        <item>ビッグデータとサイバーセキュリティ</item>
+         <item>オープンデータ、医療や行政の情報化、データを活用した街づくり、パーソナルデータの利活用など、ビッグデータをビジネスに結び付けようという動きが加速化している。 こうした中、政府や産業界が取り組むべき課題を整理するとともに、ネットワーク化されたデジタルデータ社会に対するサイバー脅威への対応などについて解説する。</item>
+        <item>谷脇 康彦</item>
+        <item>内閣官房情報セキュリティセンター副センター長</item>
+    </string-array>
+
+    <string-array name="track0_sub3" >
+        <item>11:15～11:45</item>
+        <item>ドコモクラウドの取り組み</item>
+        <item>NTTドコモでは、サービスの進化と融合を加速させ，便利・充実・効率的かつ安心・安全なスマートライフの実現に向けて，ドコモクラウドの取り組みを進めている。 本講演では，ドコモクラウドの各種APIの公開/外部パートナーとの連携によるイノベーションサービス/アプリケーション創造の取り組みついて紹介する。 また、インテリジェントサービスの１つであるエージェントのサービスの取り組みについても紹介する。</item>
+        <item>大野 友義</item>
+        <item>株式会社NTTドコモ サービス＆ソリューション開発部長</item>
+    </string-array>
+
+    <string-array name="track0_sub4" >
+        <item>11:45～12:15</item>
+        <item>インテル・ソフトウエア戦略　―　 すべてのソフトウエア開発者へ　（仮）</item>
+        <item>デバイスの多様化が加速し、インテルのプラットフォームもますます進化を遂げています。　それらのプラットフォームを生かしきるためのインテルのソフトウェア戦略とは？　IDFの情報を交えてご紹介します。</item>
+        <item>土岐 英秋</item>
+        <item>インテル株式会社　執行役員　技術本部　本部長</item>
+    </string-array>
+
+    <string-array name="track0_sub5" >
+        <item>13:00～13:40</item>
+        <item>～2020年のスマートライフをマニアックに予測する～</item>
+        <item>7年に後に我々はどんなガジェットに囲まれて生活しているのか？1964年の東京オリンピックにおける新幹線や首都高や東京モノレールに相当するものは2020年にはデジタルであるはずだ。リッチインターネットのハードウェア的解釈がスマートフォンだったのだとすると次はどうなる？</item>
+        <item>遠藤 論</item>
+        <item>株式会社角川アスキー総合研究所　取締役主席研究員</item>
+    </string-array>
+
+    <string-array name="track0_sub6" >
+        <item>13:55～14:35</item>
+        <item>United × AppAnnie　1500万DL突破のCocoPPa×アプリデータのAppAnieが語る 【海外市場トレンド】</item>
+        <item>マーケター、ディベロッパー必見！！ アプリ市場のデータについてリーディングカンパニーであるAppAnie。 日本でのディレクターである桑水氏に、海外でどのようなアプリが流行っているかをお話いただくとともに、 世界で通算１５００万DLを越え、爆速的な成長を遂げているCoCoPPaがどう作られたのか、 海外で戦っていくために何が必要かを手嶋氏に話しして頂きます！</item>
+        <item>手嶋 浩己</item>
+        <item>United.Inc 取締役 兼 執行役員</item>
+        <item>桑水　悠治</item>
+        <item>App Annie　Country Director Japan</item>
+    </string-array>
+
+    <string-array name="track0_sub7" >
+        <item>14:50～15:30</item>
+        <item>TABROID × andronavi　レビューサイトさん、メディアさんぶっちゃけ会！～秋の陣～</item>
+        <item>ユーザーが増えるに従いトレンドも変化していっているアプリ業界。 現在はどのようなアプリが面白いのか？成功していると思うのか？ アプリのマーケティングの記事で秀逸な分析を行われているアプリマーケティング研究所から鶴谷氏。 幅広い層に影響力のあるレビューサイト、TABROIDの編集長、長田氏。 初めてスマフォを購入したユーザーにも易しい、Andronaviから塩野入氏。 其々の視点から注目している事についてお話いただきたいと思います。 </item>
+        <item>鶴谷　智洋</item>
+        <item>アプリマーケティング研究所　代表</item>
+        <item>長田　真</item>
+        <item>TABROID　編集長</item>
+        <item>塩野入　和哉</item>
+        <item>andronavi　ディレクター</item>
+    </string-array>
+
+    <string-array name="track0_sub8" >
+        <item>15:45～16:25</item>
+        <item>百花繚乱モバイルOSバトル　トークパネル　～FirefoxOS Tizen BlackBerry10 iOS Android </item>
+        <item>モバイルの世界にもOS百花繚乱の時代がやってきました。AndroidやiOSがスマートフォンOSの市場を席巻する現在、BB10(Blackberry10)や新興モバイルOSと呼ばれるFxOSやTizenなどのOSの可能性をパネラーの間トークします。モバイルの世界は変わるのか変わらないのか? 必聴のセッションです。</item>
+        <item>浅井智也</item>
+        <item>Mozilla Japan</item>
+        <item>山本 直也</item>
+        <item>ネオス株式会社</item>
+        <item>佐々木　陽</item>
+        <item>GClue 代表取締役社長</item>
+        <item>嶋　是一</item>
+        <item>NPO日本Androidの会　理事</item>
+    </string-array>
+</resources>

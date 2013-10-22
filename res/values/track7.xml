@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="track7">
+        <item >@array/track7_sub0</item>
+        <item >@array/track7_sub1</item>
+    </array>
+
+    <string-array name="track7_sub0" >
+       <item>使い方</item>
+       <item>左上のメニューからカンファレンスをチェックできます</item>
+    </string-array>
+
+
+    <string-array name="track7_sub1" >
+        <item>ABC2013 Autumn</item>
+        <item>会場情報</item>
+        <item>北千住駅東口（電大口）徒歩1分。ABC2013 autumn開催日の2013年10月20日は、JR常磐線 上野～北千住間が運休となります。会場にお越しの際はご注意下さい。\n\nまたこのアプリを提供しているコミュニティのTechBoosterもバザール出展してます。ぜひA-2ブースにお立ち寄りください</item>
+        <item>10月20日</item>
+        <item>東京電機大学　東京千住キャンパス</item>
+    </string-array>
+
+</resources>

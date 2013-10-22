@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="rooms_array">
+         <item>基調講演会場</item>
+         <item>多様なデバイス</item>
+         <item>デザイン・開発</item>
+         <item>メーカー・開発</item>
+         <item>学生・団体</item>
+         <item>LT</item>
+         <item>コンテンツ・ビジネス</item>
+         <item>このアプリについて</item>
+         </string-array>
+</resources>

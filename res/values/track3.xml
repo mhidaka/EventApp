@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="track3">
+        <item >@array/track3_sub0</item>
+        <item >@array/track3_sub1</item>
+        <item >@array/track3_sub2</item>
+        <item >@array/track3_sub3</item>
+        <item >@array/track3_sub4</item>
+        <item >@array/track3_sub5</item>
+        <item >@array/track3_sub6</item>
+    </array>
+
+    <string-array name="track3_sub0" >
+       <item>トラック会場３</item>
+       <item>教室番号0206 1206教室</item>
+    </string-array>
+
+    <string-array name="track3_sub1" >
+        <item>13:00～13:40</item>
+        <item>Android* セッション：インテル® アーキテクチャー 最新技術情報</item>
+        <item>Android* onインテル® アーキテクチャーでの開発のヒント、ツールの紹介など、開発者の方にお役に立てる技術情報をお届けします。 （受講いただいた方には講演終了後、インテル®　ドロイド君Tシャツもプレゼント！）</item>
+        <item>酒本幹夫</item>
+        <item>インテル株式会社　ソフトウェア＆サービス統括部　アプリケーション・エンジニア</item>
+    </string-array>
+
+    <string-array name="track3_sub2" >
+        <item>13:55～14:35</item>
+        <item>”らくらくスマートフォン プレミアム”対応のアプリ開発について</item>
+        <item>2013年10月に発売いたしました”らくらくスマートフォン プレミアム”では、”らくらくスマートフォン”の操作性を継承しながらも、アプリダウンロードに対応しています。この講演では、らくらくタッチや音声読み上げ機能を活かしたアクセシビリティ対応のコンテンツやアプリ開発の方法についてご紹介いたします。 </item>
+        <item>大石亮介</item>
+        <item>富士通株式会社　モバイルフォン事業本部 プラットフォーム開発センター ソフトウェア開発第二部</item>
+    </string-array>
+
+    <string-array name="track3_sub3" >
+        <item>14:50～15:30</item>
+        <item>シャープのBLE(Bluetooth Low Energy)の取り組み</item>
+        <item>2012年に発売したSH-02Eに初めて搭載したBLE(Bluetoothe Low Energy)について、その目的から技術詳細、他社様との連携話、今後の活動内容等を網羅的に説明します。</item>
+        <item>仁賀 智弘</item>
+        <item>株式会社シャープ　通信システム事業本部　マーケティングセンター　NB推進部　主事</item>
+    </string-array>
+
+    <string-array name="track3_sub4" >
+        <item>15:45～16:25</item>
+        <item>“Anytime Anywhere” with Android.</item>
+        <item>スマートフォン、タブレットはオフィスにも爆発的に普及しつつあります。 一方、単純にモバイル機器をペーパレス会議やIP電話の為に利用するだけではオフィスの生産性が上がらない事が企業の悩みとなっているのが現状です。 TeleOfficeはAndroidであなたの会社のワークスタイルを革新します。</item>
+        <item>鵜川裕文</item>
+        <item>iDeepソリューションズ株式会社 部長</item>
+    </string-array>
+
+    <string-array name="track3_sub5" >
+        <item>16:40～17:20</item>
+        <item>スマートデバイスはまだまだ新しいシーンを拓く？そのためにMetaMoJiが取り組んでいること</item>
+        <item>キーボードを前提としたこれまでのPCに比べ、より洗練されたタッチスクリーンとインターフェースを持つスマートデバイスでは、人間とコンピュータの間の距離をもっと縮めることができるとMetaMoJiは考えます。従来の日本語入力は事実上、キーボードを使ったかな漢字変換しか存在しておりませんでしたが、MetaMoJiでは、タブレット端末の特性を最大限に生かした、新しい手書き入力方式　「mazec」　を開発し、販売しています。このセッションではandroidにおける製品特長及び弊社の取り組みをご紹介します。</item>
+        <item>亀井正樹</item>
+        <item>株式会社MetaMoJi 事業企画部</item>
+    </string-array>
+
+    <string-array name="track3_sub6" >
+        <item>17:35～18:15</item>
+        <item>ユーザの多様性や端末の多様性に悩むアプリのサポート業務の課題と解決策</item>
+        <item>内容：アプリを使う一般のユーザと、アプリを開発し運営する事業者（個人含む）にアンケートやインタビューをした結果、ユーザと事業者とのコミュニケーションで以下の様な課題があることが分かりました。 ・ストアのレビュー欄が実質的なコミュニケーション手段となっており、感情むき出しの書き込みばかりが目立つ ・Twitterやメールでは、サポートで重要となる機種情報を聞き出しにくい アンケートやインタビューの結果を紹介しながら、ユーザの多様性や端末の多様性に起因する業界の課題を浮き彫りにしたいと思います。 そして、課題を解決し、ユーザも事業者もハッピーになるようなソリューション「アプリヘルプ」のご紹介をいたします。</item>
+        <item>田中譲二</item>
+        <item>株式会社KSK　ITソリューション事業部　フレックス・ファーム ビジネスユニット</item>
+    </string-array>
+
+</resources>

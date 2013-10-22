@@ -1,0 +1,1353 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lecInfo updateDate="2013-10-17 00:23:26">
+	<lecture>
+		<lec_id><![CDATA[T0-11]]></lec_id>
+		<title>Conference XML API | ABC 2013 Autumn</title>
+		<abstract><![CDATA[Android Bazarr & Conference 2013 Autumn 開催にあたって、実行委員長より　開会のご挨拶]]></abstract>
+		<lec_order_num><![CDATA[11]]></lec_order_num>
+		<room_order_num><![CDATA[1]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jp/conference/abc2013a/conference/keynote/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[9]]></speaker_id>
+				<name><![CDATA[石塚　宏紀]]></name>
+				<profile><![CDATA[ABC2013 Autumn　実行委員長]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 10:00:00</start_time>
+		<end_time>2013-10-20 10:15:00</end_time>
+		<room id="1"><![CDATA[基調講演会場]]></room>
+		<category id="1"><![CDATA[基調講演・招待講演]]></category>
+		<time_frame>11</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T0-11]]></lec_id>
+		<title><![CDATA[「Next Billion --- Androidへの期待と技術革新の新しい地平」]]></title>
+		<abstract><![CDATA[「Next Billion（次の10億人）」という言葉は、ここ数年の間に、10億人以上のひとが、クラウド・デバイスを持ち、新たにインターネットに接続するようになるだろうという時代の流れを表したものです。
+
+この流れは、10億人でとどまる訳ではなく、2000年代の最初の10年での携帯電話の普及がそうであったように、2010年代を通じて、やむことなく進むと思います。この変化を、中心となって担うデバイスは、Androidだと思います。
+
+こうした変化は、世界のコミュニケーションと情報共有のスタイルを大きく変え、経済の世界にも大きなインパクトを与える、歴史的なものです。講演では、こうした時代の中で、技術的にはどのような新しい変化が起きているのかを概観したいと思います。
+
+・Packaged Web App：サーバーとクライアントの役割の見直し
+・Spanner：大規模分散データベースでの整合性の確保
+・D-Wave：新しいスタイルの量子コンピュータの登場 
+・Web Component等：ポストHTML5
+
+最後に、日本のIT技術者に、Next Billionのグローバルな世界での活躍に期待したいと思います。]]></abstract>
+		<lec_order_num><![CDATA[11]]></lec_order_num>
+		<room_order_num><![CDATA[1]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jp/conference/abc2013a/conference/keynote/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[1]]></speaker_id>
+				<name><![CDATA[丸山 不二夫]]></name>
+				<profile><![CDATA[特定非営利活動法人　日本Androidの会　名誉会長
+東京大学卒。一橋大学大学院博士課程修了。
+1987年から稚内に移住。稚内北星学園短期大学学長。
+2000年の同短大の四年制大学移行に伴い、稚内北星学園大学学長を二期務める。
+その後、早稲田大学情報生産システム研究科客員教授、
+公立はこだて未来大学情報科学部特任教授。
+日本Javaユーザ会会長、日本Androidの会会長、クラウド研究会代表等を歴任。]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 10:15:00</start_time>
+		<end_time>2013-10-20 10:45:00</end_time>
+		<room id="1"><![CDATA[基調講演会場]]></room>
+		<category id="1"><![CDATA[基調講演・招待講演]]></category>
+		<time_frame>11</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T0-11]]></lec_id>
+		<title><![CDATA[「ビッグデータとサイバーセキュリティ」]]></title>
+		<abstract><![CDATA[オープンデータ、医療や行政の情報化、データを活用した街づくり、パーソナルデータの利活用など、ビッグデータをビジネスに結び付けようという動きが加速化している。
+こうした中、政府や産業界が取り組むべき課題を整理するとともに、ネットワーク化されたデジタルデータ社会に対するサイバー脅威への対応などについて解説する。]]></abstract>
+		<lec_order_num><![CDATA[11]]></lec_order_num>
+		<room_order_num><![CDATA[1]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jp/conference/abc2013a/conference/keynote/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[2]]></speaker_id>
+				<name><![CDATA[谷脇 康彦]]></name>
+				<profile><![CDATA[内閣官房情報セキュリティセンター副センター長
+内閣審議官
+1984年、郵政省（現総務省）入省。在米日本大使館参事官、総合通信基盤局料金サービ
+ス課長、同事業政策課長、情報通信国際戦略局情報通信政策課長、大臣官房企画課長、
+大臣官房審議官などを経て、１３年６月より現職。
+著書に「ミッシングリンク～デジタル大国ニッポン再生」(12年7月、東洋経済新報社)、
+「世界一不思議な日本のケータイ」（08年5月、インプレスＲ＆Ｄ）、
+「インターネットは誰のものか」（07年7月、日経BP社）など。]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 10:45:00</start_time>
+		<end_time>2013-10-20 11:15:00</end_time>
+		<room id="1"><![CDATA[基調講演会場]]></room>
+		<category id="1"><![CDATA[基調講演・招待講演]]></category>
+		<time_frame>11</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T0-11]]></lec_id>
+		<title><![CDATA[ドコモクラウドの取り組み]]></title>
+		<abstract><![CDATA[NTTドコモでは、サービスの進化と融合を加速させ，便利・充実・効率的かつ安心・安全なスマートライフの実現に向けて，ドコモクラウドの取り組みを進めている。 
+本講演では，ドコモクラウドの各種APIの公開/外部パートナーとの連携によるイノベーションサービス/アプリケーション創造の取り組みついて紹介する。
+また、インテリジェントサービスの１つであるエージェントのサービスの取り組みについても紹介する。]]></abstract>
+		<lec_order_num><![CDATA[11]]></lec_order_num>
+		<room_order_num><![CDATA[1]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jp/conference/abc2013a/conference/keynote/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[3]]></speaker_id>
+				<name><![CDATA[大野 友義]]></name>
+				<profile><![CDATA[株式会社NTTドコモ
+サービス＆ソリューション開発部長
+1989年　日本電信電話（株）入社後、ＰＨＳ基地局装置、データ通信システムの開発に従事1999年　（株）ＮＴＴドコモへ転籍2006年　サービス＆ソリューション開発部担当部長お便りフォトサービスの開発、しゃべってコンシェルの開発、フォトコレクションの開発に従事2012年より現職]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 11:15:00</start_time>
+		<end_time>2013-10-20 11:45:00</end_time>
+		<room id="1"><![CDATA[基調講演会場]]></room>
+		<category id="1"><![CDATA[基調講演・招待講演]]></category>
+		<time_frame>11</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T0-11]]></lec_id>
+		<title><![CDATA[インテル・ソフトウエア戦略　―　 すべてのソフトウエア開発者へ　（仮）]]></title>
+		<abstract><![CDATA[デバイスの多様化が加速し、インテルのプラットフォームもますます進化を遂げています。　それらのプラットフォームを生かしきるためのインテルのソフトウェア戦略とは？　IDFの情報を交えてご紹介します。　]]></abstract>
+		<lec_order_num><![CDATA[11]]></lec_order_num>
+		<room_order_num><![CDATA[1]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jp/conference/abc2013a/conference/keynote/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[4]]></speaker_id>
+				<name><![CDATA[土岐 英秋]]></name>
+				<profile><![CDATA[インテル株式会社
+執行役員　技術本部　本部長]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 11:45:00</start_time>
+		<end_time>2013-10-20 12:15:00</end_time>
+		<room id="1"><![CDATA[基調講演会場]]></room>
+		<category id="1"><![CDATA[基調講演・招待講演]]></category>
+		<time_frame>11</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T0-11]]></lec_id>
+		<title><![CDATA[バザール紹介タイム]]></title>
+		<abstract><![CDATA[]]></abstract>
+		<lec_order_num><![CDATA[11]]></lec_order_num>
+		<room_order_num><![CDATA[1]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jp/conference/abc2013a/conference/keynote/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[]]></speaker_id>
+				<name><![CDATA[]]></name>
+				<profile><![CDATA[]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 12:15:00</start_time>
+		<end_time>2013-10-20 12:30:00</end_time>
+		<room id="1"><![CDATA[基調講演会場]]></room>
+		<category id="1"><![CDATA[基調講演・招待講演]]></category>
+		<time_frame>11</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T0-12]]></lec_id>
+		<title><![CDATA[～2020年のスマートライフをマニアックに予測する～]]></title>
+		<abstract><![CDATA[7年に後に我々はどんなガジェットに囲まれて生活しているのか？
+1964年の東京オリンピックにおける新幹線や首都高や東京モノレールに相当するものは2020年にはデジタルであるはずだ。リッチインターネットのハードウェア的解釈がスマートフォンだったのだとすると次はどうなる？]]></abstract>
+		<lec_order_num><![CDATA[12]]></lec_order_num>
+		<room_order_num><![CDATA[1]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jp/conference/abc2013a/conference/keynote/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[5]]></speaker_id>
+				<name><![CDATA[遠藤 論]]></name>
+				<profile><![CDATA[株式会社角川アスキー総合研究所　取締役主席研究員]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 13:00:00</start_time>
+		<end_time>2013-10-20 13:40:00</end_time>
+		<room id="1"><![CDATA[基調講演会場]]></room>
+		<category id="1"><![CDATA[基調講演・招待講演]]></category>
+		<time_frame>12</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T0-13]]></lec_id>
+		<title><![CDATA[United × AppAnnie　1500万DL突破のCocoPPa×アプリデータのAppAnieが語る 【海外市場トレンド】]]></title>
+		<abstract><![CDATA[マーケター、ディベロッパー必見！！
+
+アプリ市場のデータについてリーディングカンパニーであるAppAnie。
+日本でのディレクターである桑水氏に、海外でどのようなアプリが流行っているかをお話いただくとともに、
+世界で通算１５００万DLを越え、爆速的な成長を遂げているCoCoPPaがどう作られたのか、
+海外で戦っていくために何が必要かを手嶋氏に話しして頂きます！]]></abstract>
+		<lec_order_num><![CDATA[13]]></lec_order_num>
+		<room_order_num><![CDATA[1]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jp/conference/abc2013a/conference/keynote/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[6]]></speaker_id>
+				<name><![CDATA[ 手嶋 浩己]]></name>
+				<profile><![CDATA[United.Inc 取締役 兼 執行役員　]]></profile>
+			</speaker>
+			<speaker>
+				<speaker_id><![CDATA[7]]></speaker_id>
+				<name><![CDATA[ 桑水　悠治]]></name>
+				<profile><![CDATA[App Annie　Country Director Japan]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 13:55:00</start_time>
+		<end_time>2013-10-20 14:35:00</end_time>
+		<room id="1"><![CDATA[基調講演会場]]></room>
+		<category id="1"><![CDATA[基調講演・招待講演]]></category>
+		<time_frame>13</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T0-14]]></lec_id>
+		<title><![CDATA[TABROID × andronavi　レビューサイトさん、メディアさんぶっちゃけ会！～秋の陣～]]></title>
+		<abstract><![CDATA[ユーザーが増えるに従いトレンドも変化していっているアプリ業界。
+現在はどのようなアプリが面白いのか？成功していると思うのか？
+アプリのマーケティングの記事で秀逸な分析を行われているアプリマーケティング研究所から鶴谷氏。
+幅広い層に影響力のあるレビューサイト、TABROIDの編集長、長田氏。
+初めてスマフォを購入したユーザーにも易しい、Andronaviから塩野入氏。
+其々の視点から注目している事についてお話いただきたいと思います。
+
+]]></abstract>
+		<lec_order_num><![CDATA[14]]></lec_order_num>
+		<room_order_num><![CDATA[1]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jp/conference/abc2013a/conference/keynote/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[12]]></speaker_id>
+				<name><![CDATA[鶴谷　智洋]]></name>
+				<profile><![CDATA[アプリマーケティング研究所　代表]]></profile>
+			</speaker>
+			<speaker>
+				<speaker_id><![CDATA[10]]></speaker_id>
+				<name><![CDATA[長田　真]]></name>
+				<profile><![CDATA[TABROID　編集長]]></profile>
+			</speaker>
+			<speaker>
+				<speaker_id><![CDATA[11]]></speaker_id>
+				<name><![CDATA[塩野入　和哉]]></name>
+				<profile><![CDATA[andronavi　ディレクター]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 14:50:00</start_time>
+		<end_time>2013-10-20 15:30:00</end_time>
+		<room id="1"><![CDATA[基調講演会場]]></room>
+		<category id="1"><![CDATA[基調講演・招待講演]]></category>
+		<time_frame>14</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T0-15]]></lec_id>
+		<title><![CDATA[百花繚乱モバイルOSバトル　トークパネル　～FirefoxOS Tizen BlackBerry10 iOS Android ]]></title>
+		<abstract><![CDATA[モバイルの世界にもOS百花繚乱の時代がやってきました。AndroidやiOSがスマートフォンOSの市場を席巻する現在、BB10(Blackberry10)や新興モバイルOSと呼ばれるFxOSやTizenなどのOSの可能性をパネラーの間トークします。モバイルの世界は変わるのか変わらないのか? 必聴のセッションです。]]></abstract>
+		<lec_order_num><![CDATA[15]]></lec_order_num>
+		<room_order_num><![CDATA[1]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jp/conference/abc2013a/conference/keynote/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[14]]></speaker_id>
+				<name><![CDATA[浅井智也]]></name>
+				<profile><![CDATA[Mozilla Japan]]></profile>
+			</speaker>
+			<speaker>
+				<speaker_id><![CDATA[15]]></speaker_id>
+				<name><![CDATA[山本 直也]]></name>
+				<profile><![CDATA[ネオス株式会社]]></profile>
+			</speaker>
+			<speaker>
+				<speaker_id><![CDATA[16]]></speaker_id>
+				<name><![CDATA[佐々木　陽]]></name>
+				<profile><![CDATA[GClue 代表取締役社長]]></profile>
+			</speaker>
+			<speaker>
+				<speaker_id><![CDATA[17]]></speaker_id>
+				<name><![CDATA[嶋　是一]]></name>
+				<profile><![CDATA[NPO日本Androidの会　理事]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 15:45:00</start_time>
+		<end_time>2013-10-20 16:25:00</end_time>
+		<room id="1"><![CDATA[基調講演会場]]></room>
+		<category id="1"><![CDATA[基調講演・招待講演]]></category>
+		<time_frame>15</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T1-12]]></lec_id>
+		<title><![CDATA[コンパウンドドキュメント環境としてのMOONPhaseのパラダイム]]></title>
+		<abstract><![CDATA[enchantMOONが採用するOS、MOONPhaseは、従来のOSとは全く異なる概念でコンパウンド・ドキュメントを実現したOSである。
+Undoやカット&ペーストといった基本的な機能までアプリケーションとして独立して提供可能なアーキテクチャによって、
+何を目指しているのかを解説させていただきます。]]></abstract>
+		<lec_order_num><![CDATA[12]]></lec_order_num>
+		<room_order_num><![CDATA[2]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/devices/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[21]]></speaker_id>
+				<name><![CDATA[清水 亮]]></name>
+				<profile><![CDATA[株式会社ユビキタスエンターテインメント 代表取締役社長]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 13:00:00</start_time>
+		<end_time>2013-10-20 13:40:00</end_time>
+		<room id="2"><![CDATA[トラック会場１]]></room>
+		<category id="2"><![CDATA[多様なデバイス]]></category>
+		<time_frame>12</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T1-17]]></lec_id>
+		<title><![CDATA[Derimoで位置情報モニタリング]]></title>
+		<abstract><![CDATA[Derimo（デリモ）は、
+M2Mをソフトウェアフレームワークで実現したものです。
+移動機とするAndroid機（クライアント側）のGPSを利用し、
+モニタリング機とする別のAndroid機（コントロール側）に
+Google Mapと連動させてマッピングすることで
+クライアントの位置情報をモニタリングできるソフトウェア
+「Derimo Location Kit」をご紹介します。]]></abstract>
+		<lec_order_num><![CDATA[13]]></lec_order_num>
+		<room_order_num><![CDATA[2]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/devices/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[26]]></speaker_id>
+				<name><![CDATA[畑中豊司]]></name>
+				<profile><![CDATA[株式会社データ変換研究所 代表取締役
+大阪生まれ。滋賀大学教育学部卒業後、1984年にオムロンソフトウェア株式会社に入社し、UNIX系のソフトウェアの開発や営業を15年間行い、日本にテキスト抽出会社がないことから、1999年に有限会社データ変換研究所を自宅、社員1名創業。
+2000年に株式会社に組織変更。
+2011年6月より任意団体「Linux Business Initiative」の会長に就任。]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 13:55:00</start_time>
+		<end_time>2013-10-20 14:35:00</end_time>
+		<room id="2"><![CDATA[トラック会場１]]></room>
+		<category id="2"><![CDATA[多様なデバイス]]></category>
+		<time_frame>13</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T1-14]]></lec_id>
+		<title><![CDATA[Androidを活用したへッドマウントディスプレイ]]></title>
+		<abstract><![CDATA[拡張現実を実現するヘッドマウントディスプレイ「MOVERIO」に活用された技術のご紹介、シースルーを可能にしたMOVERIOによるサービス拡大の可能性をご紹介します。]]></abstract>
+		<lec_order_num><![CDATA[14]]></lec_order_num>
+		<room_order_num><![CDATA[2]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/devices/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[23]]></speaker_id>
+				<name><![CDATA[津田敦也]]></name>
+				<profile><![CDATA[セイコーエプソン（株）ビジュアルプロダクツ事業部、ＨＭＤ事業推進部部長
+入社以来、携帯電話向け液晶、有機ＥＬディスプレイの開発、設計に携わる。徹底した小型、低パワー技術にこだわり、常に業界の先端を行くものづくりを実践。
+２０１１年には、セイコーエプソンが誇るデバイス技術、光学技術を応用したシースルーモバイルビューワーＭＯＶＥＲＩＯを商品化。現在は、ＨＭＤ事業推進責任者として新規事業領域の開拓に取り組む。]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 14:50:00</start_time>
+		<end_time>2013-10-20 15:30:00</end_time>
+		<room id="2"><![CDATA[トラック会場１]]></room>
+		<category id="2"><![CDATA[多様なデバイス]]></category>
+		<time_frame>14</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T1-15]]></lec_id>
+		<title><![CDATA[Google Glass ～ ウェアラブル時代の到来に向けて]]></title>
+		<abstract><![CDATA[2013年、「Google Glass」の登場により、ヘッド・マウント・ディスプレイ(HMD)に代表される「ウェアラブル・コンピューティング」が活発化しています。本講演では、有山が今年の５月、米国滞在中に入手した「開発者向けGoogle Glass」をベースに、その機能と考えられる用途。そして、今後訪れるウェアラブル時代にAndroidの果たし得る役割について考察します。]]></abstract>
+		<lec_order_num><![CDATA[15]]></lec_order_num>
+		<room_order_num><![CDATA[2]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/devices/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[25]]></speaker_id>
+				<name><![CDATA[有山 圭二]]></name>
+				<profile><![CDATA[大阪市のソフトウェア開発会社「有限会社シーリス」代表
+Androidアプリケーションの受託開発や、Androidに関するコンサルタント業務の傍ら、技術系月刊誌への寄稿多数。最近はGoogle GLASSをはじめ「ウェアラブル・デバイス」に注目。常に新しい技術の可能性を追求し、ユーザーにどのような「便利」を届ける事ができるのかを日々、追求しています。]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 15:45:00</start_time>
+		<end_time>2013-10-20 16:25:00</end_time>
+		<room id="2"><![CDATA[トラック会場１]]></room>
+		<category id="2"><![CDATA[多様なデバイス]]></category>
+		<time_frame>15</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T1-16]]></lec_id>
+		<title><![CDATA[miramaの未来]]></title>
+		<abstract><![CDATA[拡張現実を実現するウェアラブルデバイス「mirama」が目指す未来とロードマップについて紹介します。]]></abstract>
+		<lec_order_num><![CDATA[16]]></lec_order_num>
+		<room_order_num><![CDATA[2]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/devices/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[24]]></speaker_id>
+				<name><![CDATA[近藤昭雄]]></name>
+				<profile><![CDATA[株式会社ブリリアントサービス 取締役]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 16:40:00</start_time>
+		<end_time>2013-10-20 17:20:00</end_time>
+		<room id="2"><![CDATA[トラック会場１]]></room>
+		<category id="2"><![CDATA[多様なデバイス]]></category>
+		<time_frame>16</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T1-13]]></lec_id>
+		<title><![CDATA[BeagleBone BlackでAndroidの下回りを学ぼう]]></title>
+		<abstract><![CDATA[BeagleBone Blackは、5000円以下で購入できる名刺サイズのボードです。
+オープンハードウエアとして開発されており、日本でも簡単に入手できます。
+ちいさなボードですが、Androidだけでなく、UbuntuやDebianなどのLinux環境も動作させることできます。
+このボードを使ったAndroidのシステム開発方法について紹介します。
+chromecastモドキのデモも行う予定です。バザール会場での展示も行っています。]]></abstract>
+		<lec_order_num><![CDATA[17]]></lec_order_num>
+		<room_order_num><![CDATA[2]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/devices/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[22]]></speaker_id>
+				<name><![CDATA[きんねこ]]></name>
+				<profile><![CDATA[
+某周辺機器メーカー勤務。転職先募集中。
+ここしばらくは、HDMIドングル形状のAndroidデバイスの研究・開発・製造を行っています。
+ABC当日は、バザール会場でABC/JAG/Beagleの缶バッチ売ってますので、記念にどうぞ。]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 17:35:00</start_time>
+		<end_time>2013-10-20 18:15:00</end_time>
+		<room id="2"><![CDATA[トラック会場１]]></room>
+		<category id="2"><![CDATA[多様なデバイス]]></category>
+		<time_frame>17</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T2-12]]></lec_id>
+		<title><![CDATA[質の高いUXを実現するためにやるべきこと]]></title>
+		<abstract><![CDATA[ソフトウェア開発のプロジェクトでは技術的制約やマーケティング戦略の枠組みの中でユーザが求めるUXを検討する必要がある。しかし立場の異なるメンバーが互いに共感しながら検討を進めることは難しい。
+本講演では、様々な関係者がメンバーとして参画するプロジェクトにおいて、ユーザが求めるUXを実現するためにやるべきことをベストプラクティスに基づき紹介する。]]></abstract>
+		<lec_order_num><![CDATA[12]]></lec_order_num>
+		<room_order_num><![CDATA[3]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/design/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[30]]></speaker_id>
+				<name><![CDATA[今村 健]]></name>
+				<profile><![CDATA[Surface&Architecture UXデザイナー
+日立製作所のインハウスデザイナーとして、建設機械モニター画面デザインやITシステム管理ソフトウェアなど組み込み機器やWebアプリケーションのUI/UXデザインに携わる。退社後はSurface&Architectureに参加し、企業をクライアントにAndoroidアプリ開発のUXコンサルティングに携わる。2011, 2012年度グッドデザイン賞受賞。]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 13:00:00</start_time>
+		<end_time>2013-10-20 13:40:00</end_time>
+		<room id="3"><![CDATA[トラック会場２]]></room>
+		<category id="3"><![CDATA[デザイン・開発]]></category>
+		<time_frame>12</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T2-13]]></lec_id>
+		<title><![CDATA[「理論で分かる、デザインのファーストステップ」あんざいゆき x 小太刀御禄 対談]]></title>
+		<abstract><![CDATA[Effective Android 正式公開版に掲載される小太刀御禄の記事について、あんざいゆきと小太刀御禄があれこれ話します。]]></abstract>
+		<lec_order_num><![CDATA[13]]></lec_order_num>
+		<room_order_num><![CDATA[3]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/design/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[33]]></speaker_id>
+				<name><![CDATA[あんざいゆき]]></name>
+				<profile><![CDATA[株式会社ウフィカ 代表取締役
+ブログ Y.A.M の雑記帳 にて Android アプリ開発のチップスを多数紹介。レイアウトや UI に特化した開発本「Android Layout Cookbook」や「Android UI Cookbook for ICS」などを執筆している。]]></profile>
+			</speaker>
+			<speaker>
+				<speaker_id><![CDATA[34]]></speaker_id>
+				<name><![CDATA[小太刀御禄]]></name>
+				<profile><![CDATA[イラストレーター・デザイナー
+都内IT企業でwebデザイナーとして勤務経験をもち、広告デザインから新規事業開発、自社メディア担当まで担当経験をもつ。
+国内外で活動する、イラストは日本のアニメ文化と独自のデザイン性を融合させた作風。小説の挿絵・キャラクターイラスト、ゲームキャラクター、アプリデザインなどを様々なものを手がける。デザインからイラスト、講師、メディア出演など活動は多岐にわたる。
+歴史好き。好きな歴史上の人物は島津斉彬と土井利勝。]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 13:55:00</start_time>
+		<end_time>2013-10-20 14:35:00</end_time>
+		<room id="3"><![CDATA[トラック会場２]]></room>
+		<category id="3"><![CDATA[デザイン・開発]]></category>
+		<time_frame>13</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T2-14]]></lec_id>
+		<title><![CDATA[Androidのデザインパターンとアンチデザインパターン]]></title>
+		<abstract><![CDATA[先日監訳させて頂いた『Smashing Android UI - レスポンシブUIとデザインパターン』（インプレスジャパン）の内容をもとに、Android向けのアプリデザインを行う時に使うべきデザインのパターンと、使ってはいけないパターン（アンチデザインパターン）について解説します。]]></abstract>
+		<lec_order_num><![CDATA[14]]></lec_order_num>
+		<room_order_num><![CDATA[3]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/design/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[35]]></speaker_id>
+				<name><![CDATA[佐藤 伸哉]]></name>
+				<profile><![CDATA[AKQA　Group User Experience Director
+エクスペリエンスデザイナー。Web黎明期よりUXやIAのスペシャリストとして大規模なサイト構築や日本企業のグローバル戦略を数多く手掛ける。ここ4、5年はモバイルプラットフォームの戦略、特にAndroidのデザイン戦略やUX設計に携わっている。2012年にSecret Lab, Inc.を設立。現在は欧米大手デジタルエージェンシーAKQAに所属。]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 14:50:00</start_time>
+		<end_time>2013-10-20 15:30:00</end_time>
+		<room id="3"><![CDATA[トラック会場２]]></room>
+		<category id="3"><![CDATA[デザイン・開発]]></category>
+		<time_frame>14</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T2-15]]></lec_id>
+		<title><![CDATA[知っておきたい、画像データ圧縮の仕組みと特長 ～ETC とPVRTC～]]></title>
+		<abstract><![CDATA[ABC2013 Spring で講演した『知っておきたい、画像データ圧縮の仕組みと特長 ～DXTC とPVRTC～』の続編です。
+プログラマや技術的興味のある方を対象に、Android 全機種で使用できる画像圧縮方式「ETC」の原理と、前回解説した「PVRTC」についても更に掘り下げて解説します。
+Android・iOS マルチ対応アプリ開発における画像管理の運用上のちょっとしたコツなどもご紹介します。]]></abstract>
+		<lec_order_num><![CDATA[15]]></lec_order_num>
+		<room_order_num><![CDATA[3]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/design/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[36]]></speaker_id>
+				<name><![CDATA[小野 知之]]></name>
+				<profile><![CDATA[株式会社ウェブテクノロジ R&D部 マネージャー
+主力製品のOPTPiX シリーズだけでなく、まったく絵を描かなくても３Ｄで誰でもマンガが作れる、マンガ作成ソフト「コミPo!」の開発ディレクターも担当。]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 15:45:00</start_time>
+		<end_time>2013-10-20 16:25:00</end_time>
+		<room id="3"><![CDATA[トラック会場２]]></room>
+		<category id="3"><![CDATA[デザイン・開発]]></category>
+		<time_frame>15</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T2-16]]></lec_id>
+		<title><![CDATA[HTML5ベースのハイパフォーマンスUIフレームワークOnsen UIデビュー！ ～Androidでもサクサク動くハイブリッドアプリのUIを簡単実装～]]></title>
+		<abstract><![CDATA[HTML5を用いたハイブリッドアプリ開発は、プラットフォーム毎にObjective-CやJavaといったネイティブ言語を習得する必要がないという利点がある一方で、画面作成が難しい、画面遷移時のアニメーション動作を最適化することが難しい、といったUI表現に関連する課題を抱えています。
+
+本セッションでは、アシアルがオープンソースとして公開したモバイルアプリUIフレームワークOnsen UIを用いて、HTMLベースのシンプルなコードで簡単に洗練されたハイブリッドアプリのUI表現を実装する方法をご紹介いたします。]]></abstract>
+		<lec_order_num><![CDATA[16]]></lec_order_num>
+		<room_order_num><![CDATA[3]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/design/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[37]]></speaker_id>
+				<name><![CDATA[生形 可奈子]]></name>
+				<profile><![CDATA[アシアル株式会社　Monacaエバンジェリスト
+アシアル株式会社Monacaエバンジェリストとして、HTML5ハイブリッドアプリおよびMonacaの普及促進につとめる。アシアルスクールではJavaScript、jQuery関連講義を担当。著書にJavaScript入門書「スラスラわかるJavaScript」がある。]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 16:40:00</start_time>
+		<end_time>2013-10-20 17:20:00</end_time>
+		<room id="3"><![CDATA[トラック会場２]]></room>
+		<category id="3"><![CDATA[デザイン・開発]]></category>
+		<time_frame>16</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T3-12]]></lec_id>
+		<title><![CDATA[Android* セッション：インテル® アーキテクチャー 最新技術情報]]></title>
+		<abstract><![CDATA[Android* onインテル® アーキテクチャーでの開発のヒント、ツールの紹介など、開発者の方にお役に立てる技術情報をお届けします。
+（受講いただいた方には講演終了後、インテル®　ドロイド君Tシャツもプレゼント！）]]></abstract>
+		<lec_order_num><![CDATA[12]]></lec_order_num>
+		<room_order_num><![CDATA[4]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/maker/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[47]]></speaker_id>
+				<name><![CDATA[酒本幹夫]]></name>
+				<profile><![CDATA[インテル株式会社ソフトウェア＆サービス統括部　アプリケーション・エンジニア
+ソフトウェアーメーカー様と協力して、アプリケーションのインテル(R) アーキテクチャー(IA)への対応、最適化をサポート。　近年は特にAndroidの主要アプリケーションのIA対応に力を注いでいる。　エンジニアらしい、簡潔なプレゼンテーションは好評]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 13:00:00</start_time>
+		<end_time>2013-10-20 13:40:00</end_time>
+		<room id="4"><![CDATA[トラック会場３]]></room>
+		<category id="4"><![CDATA[メーカー・開発]]></category>
+		<time_frame>12</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T3-13]]></lec_id>
+		<title><![CDATA[”らくらくスマートフォン プレミアム”対応のアプリ開発について　]]></title>
+		<abstract><![CDATA[2013年10月に発売いたしました”らくらくスマートフォン プレミアム”では、”らくらくスマートフォン”の操作性を継承しながらも、アプリダウンロードに対応しています。この講演では、らくらくタッチや音声読み上げ機能を活かしたアクセシビリティ対応のコンテンツやアプリ開発の方法についてご紹介いたします。
+
+]]></abstract>
+		<lec_order_num><![CDATA[13]]></lec_order_num>
+		<room_order_num><![CDATA[4]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/maker/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[44]]></speaker_id>
+				<name><![CDATA[大石亮介]]></name>
+				<profile><![CDATA[富士通株式会社モバイルフォン事業本部 プラットフォーム開発センター ソフトウェア開発第二部
+2002年、株式会社富士通研究所に入社。ITシステム研究所で設計技術の研究に従事。ハードウェア設計技術の題材としてAndroidに興味を持ち、NPO 日本Androidの会には設立当初より参加。2009年～2011年まで運営委員も務めた。現在は富士通株式会社にてスマートフォンのソフトウェアプラットフォームの開発に従事。]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 13:55:00</start_time>
+		<end_time>2013-10-20 14:35:00</end_time>
+		<room id="4"><![CDATA[トラック会場３]]></room>
+		<category id="4"><![CDATA[メーカー・開発]]></category>
+		<time_frame>13</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T3-14]]></lec_id>
+		<title><![CDATA[シャープのBLE(Bluetooth Low Energy)の取り組み]]></title>
+		<abstract><![CDATA[2012年に発売したSH-02Eに初めて搭載したBLE(Bluetoothe Low Energy)について、その目的から技術詳細、他社様との連携話、今後の活動内容等を網羅的に説明します。]]></abstract>
+		<lec_order_num><![CDATA[14]]></lec_order_num>
+		<room_order_num><![CDATA[4]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/maker/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[42]]></speaker_id>
+				<name><![CDATA[仁賀 智弘]]></name>
+				<profile><![CDATA[株式会社シャープ通信システム事業本部　マーケティングセンター　NB推進部　主事]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 14:50:00</start_time>
+		<end_time>2013-10-20 15:30:00</end_time>
+		<room id="4"><![CDATA[トラック会場３]]></room>
+		<category id="4"><![CDATA[メーカー・開発]]></category>
+		<time_frame>14</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T3-15]]></lec_id>
+		<title><![CDATA[“Anytime Anywhere” with Android.]]></title>
+		<abstract><![CDATA[スマートフォン、タブレットはオフィスにも爆発的に普及しつつあります。
+一方、単純にモバイル機器をペーパレス会議やIP電話の為に利用するだけではオフィスの生産性が上がらない事が企業の悩みとなっているのが現状です。
+TeleOfficeはAndroidであなたの会社のワークスタイルを革新します。]]></abstract>
+		<lec_order_num><![CDATA[15]]></lec_order_num>
+		<room_order_num><![CDATA[4]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/maker/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[41]]></speaker_id>
+				<name><![CDATA[ 鵜川裕文]]></name>
+				<profile><![CDATA[iDeepソリューションズ株式会社 部長]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 15:45:00</start_time>
+		<end_time>2013-10-20 16:25:00</end_time>
+		<room id="4"><![CDATA[トラック会場３]]></room>
+		<category id="4"><![CDATA[メーカー・開発]]></category>
+		<time_frame>15</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T3-16]]></lec_id>
+		<title><![CDATA[スマートデバイスはまだまだ新しいシーンを拓く？そのためにMetaMoJiが取り組んでいること]]></title>
+		<abstract><![CDATA[キーボードを前提としたこれまでのPCに比べ、より洗練されたタッチスクリーンとインターフェースを持つスマートデバイスでは、人間とコンピュータの間の距離をもっと縮めることができるとMetaMoJiは考えます。従来の日本語入力は事実上、キーボードを使ったかな漢字変換しか存在しておりませんでしたが、MetaMoJiでは、タブレット端末の特性を最大限に生かした、新しい手書き入力方式　「mazec」　を開発し、販売しています。このセッションではandroidにおける製品特長及び弊社の取り組みをご紹介します。]]></abstract>
+		<lec_order_num><![CDATA[16]]></lec_order_num>
+		<room_order_num><![CDATA[4]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/maker/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[46]]></speaker_id>
+				<name><![CDATA[亀井正樹]]></name>
+				<profile><![CDATA[株式会社MetaMoJi事業企画部]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 16:40:00</start_time>
+		<end_time>2013-10-20 17:20:00</end_time>
+		<room id="4"><![CDATA[トラック会場３]]></room>
+		<category id="4"><![CDATA[メーカー・開発]]></category>
+		<time_frame>16</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T3-17]]></lec_id>
+		<title><![CDATA[ユーザの多様性や端末の多様性に悩むアプリのサポート業務の課題と解決策]]></title>
+		<abstract><![CDATA[内容：アプリを使う一般のユーザと、アプリを開発し運営する事業者（個人含む）にアンケートやインタビューをした結果、ユーザと事業者とのコミュニケーションで以下の様な課題があることが分かりました。
+・ストアのレビュー欄が実質的なコミュニケーション手段となっており、感情むき出しの書き込みばかりが目立つ
+・Twitterやメールでは、サポートで重要となる機種情報を聞き出しにくい
+ 
+アンケートやインタビューの結果を紹介しながら、ユーザの多様性や端末の多様性に起因する業界の課題を浮き彫りにしたいと思います。
+そして、課題を解決し、ユーザも事業者もハッピーになるようなソリューション「アプリヘルプ」のご紹介をいたします。]]></abstract>
+		<lec_order_num><![CDATA[17]]></lec_order_num>
+		<room_order_num><![CDATA[4]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/maker/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[48]]></speaker_id>
+				<name><![CDATA[田中譲二]]></name>
+				<profile><![CDATA[株式会社KSK　ITソリューション事業部　フレックス・ファーム ビジネスユニット]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 17:35:00</start_time>
+		<end_time>2013-10-20 18:15:00</end_time>
+		<room id="4"><![CDATA[トラック会場３]]></room>
+		<category id="4"><![CDATA[メーカー・開発]]></category>
+		<time_frame>17</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T4-12]]></lec_id>
+		<title><![CDATA[こんなAndroidデバイスに期待！[学生部コーディネート]]]></title>
+		<abstract><![CDATA[わが国では通信事業者を中心としたモバイルサービス環境が整っている一方で、Android OSを搭載した端末の開発というと、どうしてもスマートフォンやスマートタブレットの域から飛び出すような端末が発売されないのが惜しまれる。海外の事情や、その他の通信環境なども踏まえ「こんなデバイスがあったら面白いんじゃ?!」という持論を展開する！]]></abstract>
+		<lec_order_num><![CDATA[12]]></lec_order_num>
+		<room_order_num><![CDATA[5]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/academic/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[51]]></speaker_id>
+				<name><![CDATA[木暮 祐一]]></name>
+				<profile><![CDATA[青森公立大学経営経済学部 准教授
+
+1980年代後半より日本の携帯電話業界動向をウォッチし、2000年にはアスキーの携帯電話情報サイト『携帯24』を立ち上げ同Web編集長。のち、ケイ・ラボラトリー（現、KLab）広報担当マネージャーを経て2004年11月に携帯電話研究家として独立。2007年、携帯電話の遠隔医療応用に関する研究に携わり徳島大学大学院工学研究科を修了、博士（工学）。2009年、武蔵野学院大学准教授。2013年、青森公立大学准教授。近著に『Mobile2.0』（共著・インプレスジャパン）、『電話代、払いすぎていませんか？』（アスキー新書）、『最新携帯電話業界の動向とカラクリがよーくわかる本』（秀和システム）など。1000台を超えるケータイのコレクションも保有。]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 13:00:00</start_time>
+		<end_time>2013-10-20 13:40:00</end_time>
+		<room id="5"><![CDATA[トラック会場４]]></room>
+		<category id="5"><![CDATA[学生・団体]]></category>
+		<time_frame>12</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T4-13]]></lec_id>
+		<title><![CDATA[「失敗はシャンパンで祝おう -新サービス立ち上げの舞台裏」[学生部コーディネート] ]]></title>
+		<abstract><![CDATA[新卒で入社し2年半、新規サービスの立ち上げ・運営を繰り返してきた中で学んだことを、特に学生の方向けにお話しできればと思います。]]></abstract>
+		<lec_order_num><![CDATA[13]]></lec_order_num>
+		<room_order_num><![CDATA[5]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/academic/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[52]]></speaker_id>
+				<name><![CDATA[中澤 理香]]></name>
+				<profile><![CDATA[株式会社ミクシィ
+1988年生まれ。2011年に早稲田大学文化構想学部を卒業後、ミクシィ入社。企画・ディレクションとして複数の女性向け新規サービス・新規事業の立ち上げに携わり、スマートフォンアプリやファッション定期購入EC「Petitejete」を担当。現在は壁紙・アイコンきせかえAndroidアプリ「POP HOME」の責任者を務める。]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 13:55:00</start_time>
+		<end_time>2013-10-20 14:35:00</end_time>
+		<room id="5"><![CDATA[トラック会場４]]></room>
+		<category id="5"><![CDATA[学生・団体]]></category>
+		<time_frame>13</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T4-14]]></lec_id>
+		<title><![CDATA[ 安全なAndroidアプリの作り方を教えます！[JSSECコラボレーションセッション]]]></title>
+		<abstract><![CDATA[「ウィルスチェックさえすればAndroidアプリの安全性は確保されるのか？」
+アプリに組み込まれたウィルスや脆弱性の危険性が騒がれている昨今、アプリ開発者として
+何をやるべきか、何ができるのかをお話します。アプリ開発者向けのJSSEC『Androidアプリ
+のセキュア設計・セキュアコーディングガイド』を編纂している講演者が、アプリ開発者に
+ガイドをどのように活用してもらえるのか？またそれを支える効果的なプロセスやツールに
+ついて分かり易く紹介します。]]></abstract>
+		<lec_order_num><![CDATA[14]]></lec_order_num>
+		<room_order_num><![CDATA[5]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/academic/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[54]]></speaker_id>
+				<name><![CDATA[松並 勝]]></name>
+				<profile><![CDATA[日本スマートフォンセキュリティ協会（JSSEC）技術部会 セキュアコーディンググループリーダー
+
+ソニーグループのセキュリティ業務に従事する傍ら、一般社団法人
+日本スマートフォンセキュリティ協会（JSSEC） セキュアコーディンググループリーダー
+として活動中。日本におけるSDL(Security Development Lifecycle)の第一人者]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 14:50:00</start_time>
+		<end_time>2013-10-20 15:30:00</end_time>
+		<room id="5"><![CDATA[トラック会場４]]></room>
+		<category id="5"><![CDATA[学生・団体]]></category>
+		<time_frame>14</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T4-15]]></lec_id>
+		<title><![CDATA[Thinking about CSS Architecture [html５j コラボレーションセッション]]]></title>
+		<abstract><![CDATA[SassのようなCSSプリプロセッサの登場によって、CSSを書く作業が楽になったという声を聞きます。しかし、実際にはその前提としてCSSとしての設計が甘ければ、CSSの無駄な肥大化や、保守性の低下などを招きます。まずは「ちゃんとCSSを書く」ために、ケーススタディ、フレームワークの紹介をします。]]></abstract>
+		<lec_order_num><![CDATA[15]]></lec_order_num>
+		<room_order_num><![CDATA[5]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/academic/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[55]]></speaker_id>
+				<name><![CDATA[谷 拓樹]]></name>
+				<profile><![CDATA[株式会社サイバーエージェント Webディベロッパー
+中小企業向けのアプリケーション開発、スタートアップでのスマートフォンサイト制作などを経て、現在はスマートフォンアプリの開発、テクニカルディレクションを担当している。 主な著書に「 魅せるiPhoneサイト 」「 スマートフォン制作の教科書（共著） 」。]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 15:45:00</start_time>
+		<end_time>2013-10-20 16:25:00</end_time>
+		<room id="5"><![CDATA[トラック会場４]]></room>
+		<category id="5"><![CDATA[学生・団体]]></category>
+		<time_frame>15</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T4-16]]></lec_id>
+		<title><![CDATA[メイキング・オブ・デーモントライヴ ： Unityによるハイエンドモバイルゲーム制作（CEDEC2013リメイク）[CEDEC コラボレーションセッション]]]></title>
+		<abstract><![CDATA[Unityを使ってハイエンドなモバイルゲームを制作することがどういうことで、どんな問題点が生じやすいか、といった内容をメインとする事例紹介。シェーダー制作に関するTIPSもあります。Unity上での工夫についての事例も多数紹介します。
+
+【樋口様の講演スライドはこちら→https://www.dropbox.com/sh/jmxy5lxmfyirp65/PZdJLdOpCX】]]></abstract>
+		<lec_order_num><![CDATA[16]]></lec_order_num>
+		<room_order_num><![CDATA[5]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/academic/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[56]]></speaker_id>
+				<name><![CDATA[樋口 雄一]]></name>
+				<profile><![CDATA[株式会社セガネットワークス アート＆デザイン部
+リードデザイナー
+ジェットセットラジオシリーズ、龍が如くシリーズを担当
+デーモントライヴではデザインリーダー及びテクニカルアーティストを担当。]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 16:40:00</start_time>
+		<end_time>2013-10-20 17:20:00</end_time>
+		<room id="5"><![CDATA[トラック会場４]]></room>
+		<category id="5"><![CDATA[学生・団体]]></category>
+		<time_frame>16</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T4-17]]></lec_id>
+		<title><![CDATA[MCPC モバイルクラウド委員会で考えるスマホアプリケーション [MCPCコラボレーションセッション]]]></title>
+		<abstract><![CDATA[ＭＣＰＣモバイルクラウド委員会では、現在顕著化しつつある社会課題解決を
+モバイルとクラウドの組み合わせで行い、少しでも社会貢献できる
+リファレンススマホアプリの創造に取り組んでいます。
+
+現在取り組んでいる課題は、車椅子やベビーカーなどの交通弱者が安心して
+通れる道を案内する「交通弱者向け進化する地図構想」です。
+この構想は横浜市のご協力もいただきながら進めています。
+
+今回は、ＭＣＰＣモバイルクラウド委員会の最新活動紹介と
+これら具体の取り組み内容を紹介し、
+日本アンドロイドの会の皆さんからのご指摘やご協力を
+いただきたいと考えます。
+
+さらに、ＭＣＰＣモバイルクラウド委員会ＣＩＳ－ＷＧでアイデア出し
+しているドライブアシスタンスロボット構想やＩＴＳ連携など、
+スマートフォンアプリケーションがクルマの運転やドライバーを
+アシストしていく将来をお話し、構想共有を計りたいと考えます。]]></abstract>
+		<lec_order_num><![CDATA[17]]></lec_order_num>
+		<room_order_num><![CDATA[5]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/academic/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[50]]></speaker_id>
+				<name><![CDATA[柏山 正守]]></name>
+				<profile><![CDATA[MCPCモバイルクラウド委員会副委員長CIS-WG主査 
+(株)日立製作所 情報通信システム社 CIS本部 部長
+
+1983年（株）日立製作所入所、
+主にコンピュータハードウェア開発とその応用システムの開発に従事。
+
+2006年よりグローバルテレマティクスのソリューション開発を推進。
+その間、日産殿電気自動車LEAF向けグローバルテレマティクスシステム（End to End System）の構想と開発をまとめる。]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 17:35:00</start_time>
+		<end_time>2013-10-20 18:15:00</end_time>
+		<room id="5"><![CDATA[トラック会場４]]></room>
+		<category id="5"><![CDATA[学生・団体]]></category>
+		<time_frame>17</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T5-12]]></lec_id>
+		<title><![CDATA[上海Androidの会の紹介と中国の最新スマフォ事情]]></title>
+		<abstract><![CDATA[（調整中）]]></abstract>
+		<lec_order_num><![CDATA[12]]></lec_order_num>
+		<room_order_num><![CDATA[6]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/lt/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[69]]></speaker_id>
+				<name><![CDATA[石井]]></name>
+				<profile><![CDATA[]]></profile>
+			</speaker>
+			<speaker>
+				<speaker_id><![CDATA[70]]></speaker_id>
+				<name><![CDATA[中尾]]></name>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 13:00:00</start_time>
+		<end_time>2013-10-20 13:40:00</end_time>
+		<room id="6"><![CDATA[トラック会場５]]></room>
+		<category id="6"><![CDATA[LT]]></category>
+		<time_frame>12</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T5-13]]></lec_id>
+		<title><![CDATA[（調整中）]]></title>
+		<abstract><![CDATA[（調整中）]]></abstract>
+		<lec_order_num><![CDATA[13]]></lec_order_num>
+		<room_order_num><![CDATA[6]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/lt/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[71]]></speaker_id>
+				<name><![CDATA[佐藤]]></name>
+				<profile><![CDATA[]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 13:55:00</start_time>
+		<end_time>2013-10-20 14:05:00</end_time>
+		<room id="6"><![CDATA[トラック会場５]]></room>
+		<category id="6"><![CDATA[LT]]></category>
+		<time_frame>13</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T5-13]]></lec_id>
+		<title><![CDATA[ＮＦＣのアレコレ]]></title>
+		<abstract><![CDATA[（調整中）]]></abstract>
+		<lec_order_num><![CDATA[13]]></lec_order_num>
+		<room_order_num><![CDATA[6]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/lt/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[72]]></speaker_id>
+				<name><![CDATA[三宅理/inuchin]]></name>
+				<profile><![CDATA[]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 14:05:00</start_time>
+		<end_time>2013-10-20 14:35:00</end_time>
+		<room id="6"><![CDATA[トラック会場５]]></room>
+		<category id="6"><![CDATA[LT]]></category>
+		<time_frame>13</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T5-14]]></lec_id>
+		<title><![CDATA[ロボットサミット（１）－（６）]]></title>
+		<abstract><![CDATA[（調整中）]]></abstract>
+		<lec_order_num><![CDATA[14]]></lec_order_num>
+		<room_order_num><![CDATA[6]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/lt/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[73]]></speaker_id>
+				<name><![CDATA[清水 素釘武]]></name>
+				<profile><![CDATA[]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 14:50:00</start_time>
+		<end_time>2013-10-20 15:30:00</end_time>
+		<room id="6"><![CDATA[トラック会場５]]></room>
+		<category id="6"><![CDATA[LT]]></category>
+		<time_frame>14</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T5-15]]></lec_id>
+		<title><![CDATA[A4します]]></title>
+		<abstract><![CDATA[（調整中）]]></abstract>
+		<lec_order_num><![CDATA[15]]></lec_order_num>
+		<room_order_num><![CDATA[6]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/lt/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[74]]></speaker_id>
+				<name><![CDATA[かねひさ]]></name>
+				<profile><![CDATA[]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 15:45:00</start_time>
+		<end_time>2013-10-20 15:50:00</end_time>
+		<room id="6"><![CDATA[トラック会場５]]></room>
+		<category id="6"><![CDATA[LT]]></category>
+		<time_frame>15</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T5-15]]></lec_id>
+		<title><![CDATA[情報再配信プラットフォームNN4を用いたANDROIDアプリ開発]]></title>
+		<abstract><![CDATA[（調整中）]]></abstract>
+		<lec_order_num><![CDATA[15]]></lec_order_num>
+		<room_order_num><![CDATA[6]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/lt/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[75]]></speaker_id>
+				<name><![CDATA[山田宏]]></name>
+				<profile><![CDATA[]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 15:52:00</start_time>
+		<end_time>2013-10-20 15:57:00</end_time>
+		<room id="6"><![CDATA[トラック会場５]]></room>
+		<category id="6"><![CDATA[LT]]></category>
+		<time_frame>15</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T5-15]]></lec_id>
+		<title><![CDATA[来週読めるAndroidアプリコードの書き方]]></title>
+		<abstract><![CDATA[（調整中）]]></abstract>
+		<lec_order_num><![CDATA[15]]></lec_order_num>
+		<room_order_num><![CDATA[6]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/lt/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[76]]></speaker_id>
+				<name><![CDATA[fkm]]></name>
+				<profile><![CDATA[]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 15:59:00</start_time>
+		<end_time>2013-10-20 16:04:00</end_time>
+		<room id="6"><![CDATA[トラック会場５]]></room>
+		<category id="6"><![CDATA[LT]]></category>
+		<time_frame>15</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T5-15]]></lec_id>
+		<title><![CDATA[回想支援ツール、NFC仏壇を作ってみた]]></title>
+		<abstract><![CDATA[（調整中）]]></abstract>
+		<lec_order_num><![CDATA[15]]></lec_order_num>
+		<room_order_num><![CDATA[6]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/lt/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[77]]></speaker_id>
+				<name><![CDATA[大坂泰弘]]></name>
+				<profile><![CDATA[]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 16:06:00</start_time>
+		<end_time>2013-10-20 16:12:00</end_time>
+		<room id="6"><![CDATA[トラック会場５]]></room>
+		<category id="6"><![CDATA[LT]]></category>
+		<time_frame>15</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T5-15]]></lec_id>
+		<title><![CDATA[Android USBカメラ接続]]></title>
+		<abstract><![CDATA[（調整中）]]></abstract>
+		<lec_order_num><![CDATA[15]]></lec_order_num>
+		<room_order_num><![CDATA[6]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/lt/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[78]]></speaker_id>
+				<name><![CDATA[清水喜弘]]></name>
+				<profile><![CDATA[]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 16:13:00</start_time>
+		<end_time>2013-10-20 16:18:00</end_time>
+		<room id="6"><![CDATA[トラック会場５]]></room>
+		<category id="6"><![CDATA[LT]]></category>
+		<time_frame>15</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T5-15]]></lec_id>
+		<title><![CDATA[Continue-Cube]]></title>
+		<abstract><![CDATA[（調整中）]]></abstract>
+		<lec_order_num><![CDATA[15]]></lec_order_num>
+		<room_order_num><![CDATA[6]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/lt/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[79]]></speaker_id>
+				<name><![CDATA[泉芳樹]]></name>
+				<profile><![CDATA[]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 16:20:00</start_time>
+		<end_time>2013-10-20 16:25:00</end_time>
+		<room id="6"><![CDATA[トラック会場５]]></room>
+		<category id="6"><![CDATA[LT]]></category>
+		<time_frame>15</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T5-16]]></lec_id>
+		<title><![CDATA[アンドロイドアプリ脆弱性検知サービス Tao RiskFinderについて]]></title>
+		<abstract><![CDATA[（調整中）]]></abstract>
+		<lec_order_num><![CDATA[16]]></lec_order_num>
+		<room_order_num><![CDATA[6]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/lt/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[80]]></speaker_id>
+				<name><![CDATA[gaku]]></name>
+				<profile><![CDATA[]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 16:40:00</start_time>
+		<end_time>2013-10-20 17:00:00</end_time>
+		<room id="6"><![CDATA[トラック会場５]]></room>
+		<category id="6"><![CDATA[LT]]></category>
+		<time_frame>16</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T5-16]]></lec_id>
+		<title><![CDATA[Kwikでつくる絵本-インタラクティブブックの紹介]]></title>
+		<abstract><![CDATA[（調整中）]]></abstract>
+		<lec_order_num><![CDATA[16]]></lec_order_num>
+		<room_order_num><![CDATA[6]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/lt/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[81]]></speaker_id>
+				<name><![CDATA[山本直也]]></name>
+				<profile><![CDATA[]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 17:00:00</start_time>
+		<end_time>2013-10-20 17:10:00</end_time>
+		<room id="6"><![CDATA[トラック会場５]]></room>
+		<category id="6"><![CDATA[LT]]></category>
+		<time_frame>16</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T5-16]]></lec_id>
+		<title><![CDATA[Maps API v2を使ってみよう]]></title>
+		<abstract><![CDATA[（調整中）]]></abstract>
+		<lec_order_num><![CDATA[16]]></lec_order_num>
+		<room_order_num><![CDATA[6]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/lt/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[82]]></speaker_id>
+				<name><![CDATA[なかざん]]></name>
+				<profile><![CDATA[]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 17:10:00</start_time>
+		<end_time>2013-10-20 17:20:00</end_time>
+		<room id="6"><![CDATA[トラック会場５]]></room>
+		<category id="6"><![CDATA[LT]]></category>
+		<time_frame>16</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T5-17]]></lec_id>
+		<title><![CDATA[日本Androidの会 埼玉支部から生まれたバンプレコーダー、コミュニティから事業会社発足までの道のり]]></title>
+		<abstract><![CDATA[（調整中）]]></abstract>
+		<lec_order_num><![CDATA[17]]></lec_order_num>
+		<room_order_num><![CDATA[6]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/lt/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[83]]></speaker_id>
+				<name><![CDATA[佐藤憲司]]></name>
+				<profile><![CDATA[]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 17:35:00</start_time>
+		<end_time>2013-10-20 17:45:00</end_time>
+		<room id="6"><![CDATA[トラック会場５]]></room>
+		<category id="6"><![CDATA[LT]]></category>
+		<time_frame>17</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T5-17]]></lec_id>
+		<title><![CDATA[香川支部の紹介]]></title>
+		<abstract><![CDATA[（調整中）]]></abstract>
+		<lec_order_num><![CDATA[17]]></lec_order_num>
+		<room_order_num><![CDATA[6]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/lt/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[84]]></speaker_id>
+				<name><![CDATA[岩倉男子]]></name>
+				<profile><![CDATA[]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 17:45:00</start_time>
+		<end_time>2013-10-20 17:55:00</end_time>
+		<room id="6"><![CDATA[トラック会場５]]></room>
+		<category id="6"><![CDATA[LT]]></category>
+		<time_frame>17</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T5-17]]></lec_id>
+		<title><![CDATA[調整中]]></title>
+		<abstract><![CDATA[（調整中）]]></abstract>
+		<lec_order_num><![CDATA[17]]></lec_order_num>
+		<room_order_num><![CDATA[6]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/lt/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[]]></speaker_id>
+				<name><![CDATA[]]></name>
+				<profile><![CDATA[]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 17:55:00</start_time>
+		<end_time>2013-10-20 18:05:00</end_time>
+		<room id="6"><![CDATA[トラック会場５]]></room>
+		<category id="6"><![CDATA[LT]]></category>
+		<time_frame>17</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T5-17]]></lec_id>
+		<title><![CDATA[浜松支部の紹介]]></title>
+		<abstract><![CDATA[（調整中）]]></abstract>
+		<lec_order_num><![CDATA[17]]></lec_order_num>
+		<room_order_num><![CDATA[6]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/lt/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[]]></speaker_id>
+				<name><![CDATA[]]></name>
+				<profile><![CDATA[]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 17:35:00</start_time>
+		<end_time>2013-10-20 18:15:00</end_time>
+		<room id="6"><![CDATA[トラック会場５]]></room>
+		<category id="6"><![CDATA[LT]]></category>
+		<time_frame>17</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T6-12]]></lec_id>
+		<title><![CDATA[「Ameba」サービスの舞台裏　Android編]]></title>
+		<abstract><![CDATA[この１年、サイバーエージェントでは「Ameba」にて100以上のスマートフォン向けサービスを創ってきました。
+その過程での様々な取り組みや創っていく中で見えてきた課題、そしてその解決策をAndroid技術者の視点より紹介させて頂きたいと思います。]]></abstract>
+		<lec_order_num><![CDATA[12]]></lec_order_num>
+		<room_order_num><![CDATA[7]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/business/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[65]]></speaker_id>
+				<name><![CDATA[藤原聖]]></name>
+				<profile><![CDATA[株式会社サイバーエージェント  アメーバ事業本部
+チーフネイティブエンジニア Androidエンジニア
+
+東京大学工学部卒。ベンチャーでAndroidアプリの開発などを経て、2011年サイバーエージェント入社。Androidエンジニア として「Amebaアプリ」「ペコリ」などのサービスを担当。2013年からはチーフネイティブエンジニアとして「Ameba」のネイ ティブアプリ全般のクオリティアップなどに従事。]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 13:00:00</start_time>
+		<end_time>2013-10-20 13:40:00</end_time>
+		<room id="7"><![CDATA[トラック会場６]]></room>
+		<category id="7"><![CDATA[コンテンツ・ビジネス]]></category>
+		<time_frame>12</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T6-13]]></lec_id>
+		<title><![CDATA[！(びっくり)するかもしれないヤフーでのアプリ開発]]></title>
+		<abstract><![CDATA[ヤフーではスマートデバイスへのシフトを掲げて、特にアプリ開発にフォーカスしています。 こんな時どうしているのか、どうやってアプリの改善をしているかなど社内でのAndroidアプリ開発の事例について紹介します。]]></abstract>
+		<lec_order_num><![CDATA[13]]></lec_order_num>
+		<room_order_num><![CDATA[7]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/business/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[64]]></speaker_id>
+				<name><![CDATA[筒井 俊祐 (Shunsuke Tsutsui)]]></name>
+				<profile><![CDATA[ヤフー株式会社 CMO室
+ヤフー黒帯認定制度 黒帯(Androidアプリ開発)
+
+ヤフオク・ヤフーホーム・ヤフーブラウザ・ヤフーマーケットなどの
+Androidアプリ開発に携わる。
+本年度7月より、ヤフー黒帯認定制度 黒帯(Androidアプリ開発)の認定を
+受け、社内のAndroidアプリ開発育成やエバンジェリスト活動も行っている。]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 13:55:00</start_time>
+		<end_time>2013-10-20 14:35:00</end_time>
+		<room id="7"><![CDATA[トラック会場６]]></room>
+		<category id="7"><![CDATA[コンテンツ・ビジネス]]></category>
+		<time_frame>13</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T6-14]]></lec_id>
+		<title><![CDATA[mBaaSを活用したアプリ開発の新たな潮流]]></title>
+		<abstract><![CDATA[スマートフォンの普及により爆発的な勢いで広まるスマホアプリ市場。様々なアプリ
+が氾濫し、マーケットでの差別化も非常に難しくなってきています。そのような中、
+アプリの差別化ポイントはクライアントアプリの作りによるところが大きく、サーバ側
+の機能はどのアプリでも汎用化できるのではないかという考えに基づき、現在米国を中心
+に注目されているサービスがmBaaS【mobile Backend as a Service】です。
+mBaaSはスマホアプリのサーバ側機能を、クラウド上で提供する新しいクラウドサービスです。
+このサービスを使う事でサーバ側の開発が不要になり、開発者はクライアントアプリの開発に注力
+できるようになります。
+本セッションでは、ニフティが提供するmBaaSサービス 「ニフティクラウド mobile backend」とは
+どのようなものか、そして活用する事でどのようなメリットがあるのか、事例を交えて解説したいと思います。]]></abstract>
+		<lec_order_num><![CDATA[14]]></lec_order_num>
+		<room_order_num><![CDATA[7]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/business/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[66]]></speaker_id>
+				<name><![CDATA[野田 雄也]]></name>
+				<profile><![CDATA[ニフティ株式会社
+クラウドプラットフォーム部 エンジニア
+
+入社以来、ソーシャルデータ分析技術の活用を中心に担当。
+2011年にソーシャルデータ分析技術を生かしたサービス「実況テレビ番組表みる
+ぞう」の立ち上げに携わり、Androidアプリ／iOSアプリ／Webアプリ／バックエ
+ンドの開発運用を経験。
+現在はそれらの経験を生かし、ニフティクラウドmobile backendの開発を担当。]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 14:50:00</start_time>
+		<end_time>2013-10-20 15:30:00</end_time>
+		<room id="7"><![CDATA[トラック会場６]]></room>
+		<category id="7"><![CDATA[コンテンツ・ビジネス]]></category>
+		<time_frame>14</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T6-15]]></lec_id>
+		<title><![CDATA[BaaSで成し遂げるアプリ制作のイノベーションとアプリのマネタイズについて]]></title>
+		<abstract><![CDATA[appCの最新サービスとマネタイズ事例をお話させていただく予定です。]]></abstract>
+		<lec_order_num><![CDATA[15]]></lec_order_num>
+		<room_order_num><![CDATA[7]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/business/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[62]]></speaker_id>
+				<name><![CDATA[ 糸賀祐樹]]></name>
+				<profile><![CDATA[カイト株式会社　シニアプロデューサー
+
+広告代理店で約5年半の勤務を経て、2011年カイト入社。
+「appC」「giveApp」の営業とアライアンスを担当]]></profile>
+			</speaker>
+			<speaker>
+				<speaker_id><![CDATA[61]]></speaker_id>
+				<name><![CDATA[倉持貴明]]></name>
+				<profile><![CDATA[カイト株式会社　システムエンジニア
+
+現在HR5・・・昆虫棍とjavaとappC Cloudを勉強中。
+Andoridサービスの開発を担当]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 15:45:00</start_time>
+		<end_time>2013-10-20 16:25:00</end_time>
+		<room id="7"><![CDATA[トラック会場６]]></room>
+		<category id="7"><![CDATA[コンテンツ・ビジネス]]></category>
+		<time_frame>15</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T6-16]]></lec_id>
+		<title><![CDATA[「うわっ…私の開発、速すぎ？」ライブコーディングでわかるMBaaS 利用パターン ]]></title>
+		<abstract><![CDATA[MBaaS（Mobile Backend As A Service）という言葉も一般的になってきましたが、まだ使ったことがない方や、実際にどう使えばいいのかわからない方に向けて、弊社が提供する Kii Cloudの SDKをアプリから使用する例をライブコーディングでお見せします。また、弊社が提供する中国へのアプリ展開サービスの説明もする予定です。 MBaaSでなにができるのか見てみたい方、中国へのアプリ展開に興味のある方のご参加をお待ちしております。]]></abstract>
+		<lec_order_num><![CDATA[16]]></lec_order_num>
+		<room_order_num><![CDATA[7]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/business/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[63]]></speaker_id>
+				<name><![CDATA[石塚進]]></name>
+				<profile><![CDATA[Kii株式会社エンジニアリングディレクター]]></profile>
+			</speaker>
+			<speaker>
+				<speaker_id><![CDATA[67]]></speaker_id>
+				<name><![CDATA[熊野聡]]></name>
+				<profile><![CDATA[Kii株式会社
+エンジニア]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 16:40:00</start_time>
+		<end_time>2013-10-20 17:20:00</end_time>
+		<room id="7"><![CDATA[トラック会場６]]></room>
+		<category id="7"><![CDATA[コンテンツ・ビジネス]]></category>
+		<time_frame>16</time_frame>
+	</lecture>
+	<lecture>
+		<lec_id><![CDATA[T6-17]]></lec_id>
+		<title><![CDATA[広告側から見た良いアプリとその運用方法]]></title>
+		<abstract><![CDATA[アプリケーションだけで収益をたてられている方も増えてきていますが、そこでちゃんとお金を稼げているアプリはどういう物があるのか。
+どうしたらもっと収益を建てられるようになるのかをトークセッションとしてお話したいと思います。
+※ポロりもあるかもしれませんが、原則つぶやき、Facebook無しでお願いします。いいか、絶対つぶやくなよ？いいか絶対つぶやくなよ！？
+会場に広告業界系の人がいたら巻き込みますのであしからず。]]></abstract>
+		<lec_order_num><![CDATA[17]]></lec_order_num>
+		<room_order_num><![CDATA[7]]></room_order_num>
+		<url><![CDATA[http://www.android-group.jphttp://www.android-group.jp/conference/abc2013a/conference/business/]]></url>
+		<speakers>
+			<speaker>
+				<speaker_id><![CDATA[57]]></speaker_id>
+				<name><![CDATA[S]]></name>
+				<profile><![CDATA[六本木ヒルズ内にある某Gのつく会社の覆面男]]></profile>
+			</speaker>
+			<speaker>
+				<speaker_id><![CDATA[58]]></speaker_id>
+				<name><![CDATA[森嶋　大樹]]></name>
+				<profile><![CDATA[United　株式会社　SSP事業部　プロデューサー]]></profile>
+			</speaker>
+			<speaker>
+				<speaker_id><![CDATA[59]]></speaker_id>
+				<name><![CDATA[成田 繁泰]]></name>
+				<profile><![CDATA[株式会社ファンコミュニケーションズ　ADN事業部　営業推進部　営業推進2課　チームリーダー]]></profile>
+			</speaker>
+			<speaker>
+				<speaker_id><![CDATA[60]]></speaker_id>
+				<name><![CDATA[山田　雄介]]></name>
+				<profile><![CDATA[株式会社メタップス シニア コンサルタント]]></profile>
+			</speaker>
+		</speakers>
+		<start_time>2013-10-20 17:35:00</start_time>
+		<end_time>2013-10-20 18:15:00</end_time>
+		<room id="7"><![CDATA[トラック会場６]]></room>
+		<category id="7"><![CDATA[コンテンツ・ビジネス]]></category>
+		<time_frame>17</time_frame>
+	</lecture>
+</lecInfo>
