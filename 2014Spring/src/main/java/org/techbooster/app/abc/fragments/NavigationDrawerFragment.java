@@ -15,17 +15,21 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.FrameLayout;
 import android.widget.ListView;
 
 import javax.inject.Inject;
 
 public class NavigationDrawerFragment extends Fragment {
+
+    private final static String TAG = NavigationDrawerFragment.class.getSimpleName();
 
     private static final String STATE_SELECTED_POSITION = "selected_navigation_drawer_position";
 
@@ -34,14 +38,20 @@ public class NavigationDrawerFragment extends Fragment {
     @Inject
     private NavigationDrawerCallbacks mCallbacks;
 
+    @Inject
+    private DrawerLayout mDrawerLayout;
+
+    @Inject
+    private FrameLayout mFragmentContainerView;
+
+    private ListView mDrawerListView;
+
     private ActionBarDrawerToggle mDrawerToggle;
 
-    private DrawerLayout mDrawerLayout;
-    private ListView mDrawerListView;
-    private View mFragmentContainerView;
-
     private int mCurrentSelectedPosition = 0;
+
     private boolean mFromSavedInstanceState;
+
     private boolean mUserLearnedDrawer;
 
     public NavigationDrawerFragment() {
@@ -66,12 +76,12 @@ public class NavigationDrawerFragment extends Fragment {
     }
 
     @Override
-    public void onActivityCreated (Bundle savedInstanceState) {
+    public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         IndirectInjector.inject(getActivity(), this);
 
-        // Indicate that this fragment would like to influence the set of actions in the action bar.
         setHasOptionsMenu(true);
+        setUpNavigationDrawer();
     }
 
     @Override
@@ -98,17 +108,13 @@ public class NavigationDrawerFragment extends Fragment {
         return mDrawerLayout != null && mDrawerLayout.isDrawerOpen(mFragmentContainerView);
     }
 
-    /**
-     * Users of this fragment must call this method to set up the navigation drawer interactions.
-     *
-     * @param fragmentId   The android:id of this fragment in its activity's layout.
-     * @param drawerLayout The DrawerLayout containing this fragment's UI.
-     */
-    public void setUp(int fragmentId, DrawerLayout drawerLayout) {
-        mFragmentContainerView = getActivity().findViewById(fragmentId);
-        mDrawerLayout = drawerLayout;
+    public void setUpNavigationDrawer() {
 
-        // set a custom shadow that overlays the main content when the drawer opens
+        if(mDrawerLayout == null || mFragmentContainerView == null){
+            Log.i(TAG, "non drawer mode.");
+            return;
+        }
+
         mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
         // set up the drawer's list view with items and click listener
 
@@ -218,6 +224,7 @@ public class NavigationDrawerFragment extends Fragment {
     }
 
     public static interface NavigationDrawerCallbacks {
+
         void onNavigationDrawerItemSelected(int position);
     }
 }
