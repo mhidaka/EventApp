@@ -3,6 +3,7 @@ package org.techbooster.app.abc.fragments;
 import com.sys1yagi.indirectinjector.IndirectInjector;
 
 import org.techbooster.app.abc.R;
+import org.techbooster.app.abc.tools.IntentUtils;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
@@ -23,9 +24,13 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import javax.inject.Inject;
+
+import butterknife.ButterKnife;
+import butterknife.InjectView;
 
 public class NavigationDrawerFragment extends Fragment {
 
@@ -44,7 +49,10 @@ public class NavigationDrawerFragment extends Fragment {
     @Inject
     private FrameLayout mFragmentContainerView;
 
-    private ListView mDrawerListView;
+    @InjectView(R.id.menu_list)
+    ListView mDrawerListView;
+
+    ImageView mJagLink;
 
     private ActionBarDrawerToggle mDrawerToggle;
 
@@ -84,24 +92,37 @@ public class NavigationDrawerFragment extends Fragment {
         setUpNavigationDrawer();
     }
 
+    private boolean isClickFooterView(int position){
+        return mDrawerListView.getCount() - 1 == position;
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
-        mDrawerListView = (ListView) inflater.inflate(
-                R.layout.fragment_navigation_drawer, container, false);
+                             Bundle savedInstanceState) {
+        View view = inflater.inflate(
+                R.layout.fragment_navigation_drawer, null, false);
+        ButterKnife.inject(this, view);
+
+        mJagLink = (ImageView)inflater.inflate(R.layout.listitem_jag_link, null, false);
+        mDrawerListView.addFooterView(mJagLink);
         mDrawerListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(isClickFooterView(position)){
+                    IntentUtils.openUrl(getActivity(), getString(R.string.jag_link));
+                    return;
+                }
                 selectItem(position);
             }
         });
         mDrawerListView.setAdapter(new ArrayAdapter<String>(
-                getActionBar().getThemedContext(),
+                getActivity(),
                 android.R.layout.simple_list_item_1,
                 android.R.id.text1,
                 getResources().getStringArray(R.array.drawer_menu_list)));
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
-        return mDrawerListView;
+
+        return view;
     }
 
     public boolean isDrawerOpen() {
@@ -110,7 +131,7 @@ public class NavigationDrawerFragment extends Fragment {
 
     public void setUpNavigationDrawer() {
 
-        if(mDrawerLayout == null || mFragmentContainerView == null){
+        if (mDrawerLayout == null || mFragmentContainerView == null) {
             Log.i(TAG, "non drawer mode.");
             return;
         }

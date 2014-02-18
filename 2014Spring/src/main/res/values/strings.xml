@@ -7,8 +7,9 @@
     <string name="title_section3">Section 3</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="action_example">Example action</string>
-    <string name="action_settings">Settings</string>
+
+    <string name="jag_link">http://www.android-group.jp/</string>
+
     <string-array name="drawer_menu_list">
         <item>開催にあたって</item>
         <item>イベント概要</item>
