@@ -28,3 +28,7 @@ proguard/
 *.iws
 .idea/
 Thumbs.db
+
+.gradle
+/.idea/workspace.xml
+.DS_Store

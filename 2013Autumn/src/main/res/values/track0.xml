@@ -11,6 +11,7 @@
         <item >@array/track0_sub6</item>
         <item >@array/track0_sub7</item>
         <item >@array/track0_sub8</item>
+        <item >@array/track0_sub9</item>
     </array>
 
     <string-array name="track0_sub0" >
@@ -34,7 +35,7 @@
         <item>特定非営利活動法人　日本Androidの会　名誉会長</item>
     </string-array>
 
-    <string-array name="track0_sub2" >
+    <string-array name="track0_sub3" >
         <item>10:45～11:15</item>
         <item>ビッグデータとサイバーセキュリティ</item>
          <item>オープンデータ、医療や行政の情報化、データを活用した街づくり、パーソナルデータの利活用など、ビッグデータをビジネスに結び付けようという動きが加速化している。 こうした中、政府や産業界が取り組むべき課題を整理するとともに、ネットワーク化されたデジタルデータ社会に対するサイバー脅威への対応などについて解説する。</item>
@@ -42,7 +43,7 @@
         <item>内閣官房情報セキュリティセンター副センター長</item>
     </string-array>
 
-    <string-array name="track0_sub3" >
+    <string-array name="track0_sub4" >
         <item>11:15～11:45</item>
         <item>ドコモクラウドの取り組み</item>
         <item>NTTドコモでは、サービスの進化と融合を加速させ，便利・充実・効率的かつ安心・安全なスマートライフの実現に向けて，ドコモクラウドの取り組みを進めている。 本講演では，ドコモクラウドの各種APIの公開/外部パートナーとの連携によるイノベーションサービス/アプリケーション創造の取り組みついて紹介する。 また、インテリジェントサービスの１つであるエージェントのサービスの取り組みについても紹介する。</item>
@@ -50,7 +51,7 @@
         <item>株式会社NTTドコモ サービス＆ソリューション開発部長</item>
     </string-array>
 
-    <string-array name="track0_sub4" >
+    <string-array name="track0_sub5" >
         <item>11:45～12:15</item>
         <item>インテル・ソフトウエア戦略　―　 すべてのソフトウエア開発者へ　（仮）</item>
         <item>デバイスの多様化が加速し、インテルのプラットフォームもますます進化を遂げています。　それらのプラットフォームを生かしきるためのインテルのソフトウェア戦略とは？　IDFの情報を交えてご紹介します。</item>
@@ -58,7 +59,7 @@
         <item>インテル株式会社　執行役員　技術本部　本部長</item>
     </string-array>
 
-    <string-array name="track0_sub5" >
+    <string-array name="track0_sub6" >
         <item>13:00～13:40</item>
         <item>～2020年のスマートライフをマニアックに予測する～</item>
         <item>7年に後に我々はどんなガジェットに囲まれて生活しているのか？1964年の東京オリンピックにおける新幹線や首都高や東京モノレールに相当するものは2020年にはデジタルであるはずだ。リッチインターネットのハードウェア的解釈がスマートフォンだったのだとすると次はどうなる？</item>
@@ -66,7 +67,7 @@
         <item>株式会社角川アスキー総合研究所　取締役主席研究員</item>
     </string-array>
 
-    <string-array name="track0_sub6" >
+    <string-array name="track0_sub7" >
         <item>13:55～14:35</item>
         <item>United × AppAnnie　1500万DL突破のCocoPPa×アプリデータのAppAnieが語る 【海外市場トレンド】</item>
         <item>マーケター、ディベロッパー必見！！ アプリ市場のデータについてリーディングカンパニーであるAppAnie。 日本でのディレクターである桑水氏に、海外でどのようなアプリが流行っているかをお話いただくとともに、 世界で通算１５００万DLを越え、爆速的な成長を遂げているCoCoPPaがどう作られたのか、 海外で戦っていくために何が必要かを手嶋氏に話しして頂きます！</item>
@@ -76,7 +77,7 @@
         <item>App Annie　Country Director Japan</item>
     </string-array>
 
-    <string-array name="track0_sub7" >
+    <string-array name="track0_sub8" >
         <item>14:50～15:30</item>
         <item>TABROID × andronavi　レビューサイトさん、メディアさんぶっちゃけ会！～秋の陣～</item>
         <item>ユーザーが増えるに従いトレンドも変化していっているアプリ業界。 現在はどのようなアプリが面白いのか？成功していると思うのか？ アプリのマーケティングの記事で秀逸な分析を行われているアプリマーケティング研究所から鶴谷氏。 幅広い層に影響力のあるレビューサイト、TABROIDの編集長、長田氏。 初めてスマフォを購入したユーザーにも易しい、Andronaviから塩野入氏。 其々の視点から注目している事についてお話いただきたいと思います。 </item>
@@ -88,7 +89,7 @@
         <item>andronavi　ディレクター</item>
     </string-array>
 
-    <string-array name="track0_sub8" >
+    <string-array name="track0_sub9" >
         <item>15:45～16:25</item>
         <item>百花繚乱モバイルOSバトル　トークパネル　～FirefoxOS Tizen BlackBerry10 iOS Android </item>
         <item>モバイルの世界にもOS百花繚乱の時代がやってきました。AndroidやiOSがスマートフォンOSの市場を席巻する現在、BB10(Blackberry10)や新興モバイルOSと呼ばれるFxOSやTizenなどのOSの可能性をパネラーの間トークします。モバイルの世界は変わるのか変わらないのか? 必聴のセッションです。</item>
