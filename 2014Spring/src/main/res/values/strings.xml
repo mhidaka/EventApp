@@ -9,5 +9,12 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Example action</string>
     <string name="action_settings">Settings</string>
-
+    <string-array name="drawer_menu_list">
+        <item>開催にあたって</item>
+        <item>イベント概要</item>
+        <item>カンファレンス</item>
+        <item>バザール</item>
+        <item>会場</item>
+        <item>公式サイト</item>
+    </string-array>
 </resources>
