@@ -1,4 +1,6 @@
-package org.techbooster.app.abc;
+package org.techbooster.app.abc.fragments;
+
+import org.techbooster.app.abc.R;
 
 import android.support.v7.app.ActionBarActivity;
 import android.app.Activity;
