@@ -1,5 +1,7 @@
 package org.techbooster.app.abc;
 
+import com.sys1yagi.indirectinjector.IndirectInjector;
+
 import org.techbooster.app.abc.fragments.NavigationDrawerFragment;
 
 import android.app.Activity;
@@ -26,6 +28,8 @@ public class MainActivity extends ActionBarActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        IndirectInjector.addDependency(this, this);
+
         setContentView(R.layout.activity_main);
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
