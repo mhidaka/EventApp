@@ -52,8 +52,6 @@ public class NavigationDrawerFragment extends Fragment {
     @InjectView(R.id.menu_list)
     ListView mDrawerListView;
 
-    ImageView mJagLink;
-
     private ActionBarDrawerToggle mDrawerToggle;
 
     private int mCurrentSelectedPosition = 0;
@@ -92,23 +90,23 @@ public class NavigationDrawerFragment extends Fragment {
         setUpNavigationDrawer();
     }
 
-    private boolean isClickFooterView(int position){
+    private boolean isClickFooterView(int position) {
         return mDrawerListView.getCount() - 1 == position;
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+            Bundle savedInstanceState) {
         View view = inflater.inflate(
                 R.layout.fragment_navigation_drawer, null, false);
         ButterKnife.inject(this, view);
 
-        mJagLink = (ImageView)inflater.inflate(R.layout.listitem_jag_link, null, false);
-        mDrawerListView.addFooterView(mJagLink);
+        ImageView jagLink = (ImageView) inflater.inflate(R.layout.listitem_jag_link, null, false);
+        mDrawerListView.addFooterView(jagLink);
         mDrawerListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if(isClickFooterView(position)){
+                if (isClickFooterView(position)) {
                     IntentUtils.openUrl(getActivity(), getString(R.string.jag_link));
                     return;
                 }
