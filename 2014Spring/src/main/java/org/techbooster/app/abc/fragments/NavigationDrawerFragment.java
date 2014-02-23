@@ -2,7 +2,9 @@ package org.techbooster.app.abc.fragments;
 
 import com.sys1yagi.indirectinjector.IndirectInjector;
 
+import org.techbooster.app.abc.MainActivity;
 import org.techbooster.app.abc.R;
+import org.techbooster.app.abc.controllers.FragmentTransitionController;
 import org.techbooster.app.abc.tools.IntentUtils;
 
 import android.app.Activity;
@@ -41,7 +43,7 @@ public class NavigationDrawerFragment extends Fragment {
     private static final String PREF_USER_LEARNED_DRAWER = "navigation_drawer_learned";
 
     @Inject
-    private NavigationDrawerCallbacks mCallbacks;
+    private FragmentTransitionController mFragmentTransitionController;
 
     @Inject
     private DrawerLayout mDrawerLayout;
@@ -77,8 +79,6 @@ public class NavigationDrawerFragment extends Fragment {
             mFromSavedInstanceState = true;
         }
 
-        // Select either the default item (0) or the last selected item.
-        selectItem(mCurrentSelectedPosition);
     }
 
     @Override
@@ -88,6 +88,7 @@ public class NavigationDrawerFragment extends Fragment {
 
         setHasOptionsMenu(true);
         setUpNavigationDrawer();
+        selectItem(mCurrentSelectedPosition);
     }
 
     private boolean isClickFooterView(int position) {
@@ -202,9 +203,10 @@ public class NavigationDrawerFragment extends Fragment {
         if (mDrawerLayout != null) {
             mDrawerLayout.closeDrawer(mFragmentContainerView);
         }
-        if (mCallbacks != null) {
-            mCallbacks.onNavigationDrawerItemSelected(position);
-        }
+
+        mFragmentTransitionController.replaceFragment(
+                MainActivity.PlaceholderFragment.newInstance(position)
+        );
     }
 
     @Override
@@ -215,7 +217,6 @@ public class NavigationDrawerFragment extends Fragment {
     @Override
     public void onDetach() {
         super.onDetach();
-        mCallbacks = null;
     }
 
     @Override
@@ -240,10 +241,5 @@ public class NavigationDrawerFragment extends Fragment {
 
     private ActionBar getActionBar() {
         return ((ActionBarActivity) getActivity()).getSupportActionBar();
-    }
-
-    public static interface NavigationDrawerCallbacks {
-
-        void onNavigationDrawerItemSelected(int position);
     }
 }

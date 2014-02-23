@@ -2,15 +2,19 @@ package org.techbooster.app.abc;
 
 import com.sys1yagi.indirectinjector.IndirectInjector;
 
+import org.techbooster.app.abc.controllers.FragmentTransitionController;
 import org.techbooster.app.abc.fragments.NavigationDrawerFragment;
+import org.techbooster.app.abc.tools.DrawerLayoutManager;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,44 +22,51 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity
-        implements NavigationDrawerFragment.NavigationDrawerCallbacks {
+        implements FragmentTransitionController {
 
     private CharSequence mTitle;
+
+    private DrawerLayoutManager mDrawerLayoutManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+
         mTitle = getTitle();
+        mDrawerLayoutManager =
+                DrawerLayoutManager.newInstance(drawerLayout);
 
         IndirectInjector.addDependency(this, this);
-        IndirectInjector.addDependency(this, (DrawerLayout) findViewById(R.id.drawer_layout));
+        IndirectInjector.addDependency(this, drawerLayout);
         IndirectInjector.addDependency(this, (FrameLayout) findViewById(R.id.navigation_drawer));
 
     }
 
     @Override
-    public void onNavigationDrawerItemSelected(int position) {
-        // update the main content by replacing fragments
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
-                .commit();
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_MENU) {
+            mDrawerLayoutManager.toggle();
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
     }
 
-    public void onSectionAttached(int number) {
-        switch (number) {
-            case 1:
-                mTitle = getString(R.string.title_section1);
-                break;
-            case 2:
-                mTitle = getString(R.string.title_section2);
-                break;
-            case 3:
-                mTitle = getString(R.string.title_section3);
-                break;
-        }
+    @Override
+    public void addFragment(Fragment fragment) {
+
+    }
+
+    @Override
+    public void replaceFragment(Fragment fragment) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction()
+                .addToBackStack(null)
+                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                .replace(R.id.container, fragment)
+                .commit();
     }
 
     /**
@@ -86,19 +97,13 @@ public class MainActivity extends ActionBarActivity
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                Bundle savedInstanceState) {
+                                 Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.section_label);
             textView.setText(Integer.toString(getArguments().getInt(ARG_SECTION_NUMBER)));
             return rootView;
         }
 
-        @Override
-        public void onAttach(Activity activity) {
-            super.onAttach(activity);
-            ((MainActivity) activity).onSectionAttached(
-                    getArguments().getInt(ARG_SECTION_NUMBER));
-        }
     }
 
 }
