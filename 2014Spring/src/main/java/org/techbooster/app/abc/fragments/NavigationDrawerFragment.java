@@ -3,6 +3,7 @@ package org.techbooster.app.abc.fragments;
 import com.sys1yagi.indirectinjector.IndirectInjector;
 
 import org.techbooster.app.abc.R;
+import org.techbooster.app.abc.controllers.ActionBarController;
 import org.techbooster.app.abc.controllers.FragmentTransitionController;
 import org.techbooster.app.abc.tools.IntentUtils;
 
@@ -45,7 +46,7 @@ public class NavigationDrawerFragment extends Fragment {
         TOP(R.string.menu_top, PlaceholderFragment.newInstance(0)),
         SUMMARY(R.string.menu_summary, PlaceholderFragment.newInstance(1)),
         CONFERENCE(R.string.menu_conference, PlaceholderFragment.newInstance(2)),
-        BAZAAR(R.string.menu_bazaar, PlaceholderFragment.newInstance(3)),
+        BAZAAR(R.string.menu_bazaar, BazaarListFragment.newInstance()),
         MAP(R.string.menu_map, PlaceholderFragment.newInstance(4)),
         OFFICIAL_SITE(R.string.menu_official_site, PlaceholderFragment.newInstance(5)),
         OSS_LICENSE(R.string.menu_open_source_license, PlaceholderFragment.newInstance(6)),;
@@ -69,6 +70,9 @@ public class NavigationDrawerFragment extends Fragment {
 
     @Inject
     private FragmentTransitionController mFragmentTransitionController;
+
+    @Inject
+    private ActionBarController mActionBarController;
 
     @Inject
     private DrawerLayout mDrawerLayout;
@@ -233,9 +237,9 @@ public class NavigationDrawerFragment extends Fragment {
             mDrawerLayout.closeDrawer(mFragmentContainerView);
         }
 
-        mFragmentTransitionController.replaceFragment(
-                Menu.values()[position].getFragment()
-        );
+        Menu menu = Menu.values()[position];
+        mActionBarController.setTitle(menu.getTitleResId());
+        mFragmentTransitionController.replaceFragment(menu.getFragment());
     }
 
     @Override

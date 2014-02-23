@@ -8,6 +8,8 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
+    <string name="network_error">取得失敗しました。</string>
+
     <string name="jag_link">http://www.android-group.jp/</string>
     <string name="menu_top">開催にあたって</string>
     <string name="menu_summary">イベント概要</string>
