@@ -2,7 +2,6 @@ package org.techbooster.app.abc.fragments;
 
 import com.sys1yagi.indirectinjector.IndirectInjector;
 
-import org.techbooster.app.abc.MainActivity;
 import org.techbooster.app.abc.R;
 import org.techbooster.app.abc.controllers.FragmentTransitionController;
 import org.techbooster.app.abc.tools.IntentUtils;
@@ -42,6 +41,32 @@ public class NavigationDrawerFragment extends Fragment {
 
     private static final String PREF_USER_LEARNED_DRAWER = "navigation_drawer_learned";
 
+    enum Menu {
+        TOP(R.string.menu_top, PlaceholderFragment.newInstance(0)),
+        SUMMARY(R.string.menu_summary, PlaceholderFragment.newInstance(1)),
+        CONFERENCE(R.string.menu_conference, PlaceholderFragment.newInstance(2)),
+        BAZAAR(R.string.menu_bazaar, PlaceholderFragment.newInstance(3)),
+        MAP(R.string.menu_map, PlaceholderFragment.newInstance(4)),
+        OFFICIAL_SITE(R.string.menu_official_site, PlaceholderFragment.newInstance(5)),
+        OSS_LICENSE(R.string.menu_open_source_license, PlaceholderFragment.newInstance(6)),;
+
+        private int mTitleResId;
+        private Fragment mFragment;
+
+        Menu(int titleId, Fragment fragment) {
+            mTitleResId = titleId;
+            mFragment = fragment;
+        }
+
+        public int getTitleResId() {
+            return mTitleResId;
+        }
+
+        public Fragment getFragment() {
+            return mFragment;
+        }
+    }
+
     @Inject
     private FragmentTransitionController mFragmentTransitionController;
 
@@ -56,7 +81,7 @@ public class NavigationDrawerFragment extends Fragment {
 
     private ActionBarDrawerToggle mDrawerToggle;
 
-    private int mCurrentSelectedPosition = 0;
+    private int mCurrentSelectedPosition = 3;
 
     private boolean mFromSavedInstanceState;
 
@@ -69,8 +94,6 @@ public class NavigationDrawerFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Read in the flag indicating whether or not the user has demonstrated awareness of the
-        // drawer. See PREF_USER_LEARNED_DRAWER for details.
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getActivity());
         mUserLearnedDrawer = sp.getBoolean(PREF_USER_LEARNED_DRAWER, false);
 
@@ -88,7 +111,9 @@ public class NavigationDrawerFragment extends Fragment {
 
         setHasOptionsMenu(true);
         setUpNavigationDrawer();
-        selectItem(mCurrentSelectedPosition);
+        if (savedInstanceState == null) {
+            selectItem(mCurrentSelectedPosition);
+        }
     }
 
     private boolean isClickFooterView(int position) {
@@ -97,7 +122,7 @@ public class NavigationDrawerFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
+                             Bundle savedInstanceState) {
         View view = inflater.inflate(
                 R.layout.fragment_navigation_drawer, null, false);
         ButterKnife.inject(this, view);
@@ -114,11 +139,15 @@ public class NavigationDrawerFragment extends Fragment {
                 selectItem(position);
             }
         });
-        mDrawerListView.setAdapter(new ArrayAdapter<String>(
-                getActivity(),
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),
                 android.R.layout.simple_list_item_1,
-                android.R.id.text1,
-                getResources().getStringArray(R.array.drawer_menu_list)));
+                android.R.id.text1);
+        for (Menu menu : Menu.values()) {
+            adapter.add(getString(menu.getTitleResId()));
+        }
+
+        mDrawerListView.setAdapter(adapter);
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
 
         return view;
@@ -205,7 +234,7 @@ public class NavigationDrawerFragment extends Fragment {
         }
 
         mFragmentTransitionController.replaceFragment(
-                MainActivity.PlaceholderFragment.newInstance(position)
+                Menu.values()[position].getFragment()
         );
     }
 
