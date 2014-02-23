@@ -24,7 +24,16 @@ android {
 }
 
 dependencies {
+    compile fileTree(dir: "src/main/libs", include: "*.jar")
     compile 'com.android.support:appcompat-v7:+'
     compile 'com.sys1yagi:indirect-injector:0.0.1'
     compile 'com.jakewharton:butterknife:4.0.1'
+    compile 'org.jsoup:jsoup:1.7.2'
+    compile 'com.nhaarman.listviewanimations:library:2.6.0'
+    compile 'com.github.johnkil.android-progressfragment:progressfragment:1.4.0'
+
+    instrumentTestCompile 'org.mockito:mockito-core:1.9.5'
+    instrumentTestCompile 'com.google.dexmaker:dexmaker:1.0'
+    instrumentTestCompile 'com.google.dexmaker:dexmaker-mockito:1.0'
+    instrumentTestCompile 'commons-io:commons-io:2.4'
 }
