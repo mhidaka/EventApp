@@ -2,6 +2,9 @@ package org.techbooster.app.abc.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
+import android.text.TextUtils;
+import android.view.View;
+import android.widget.ListView;
 
 import com.android.volley.VolleyError;
 import com.nhaarman.listviewanimations.swinginadapters.prepared.SwingBottomInAnimationAdapter;
@@ -9,6 +12,7 @@ import com.nhaarman.listviewanimations.swinginadapters.prepared.SwingBottomInAni
 import org.techbooster.app.abc.R;
 import org.techbooster.app.abc.loaders.BazaarEntryLoader;
 import org.techbooster.app.abc.models.BazaarEntry;
+import org.techbooster.app.abc.tools.IntentUtils;
 import org.techbooster.app.abc.views.BazaarListAdapter;
 
 import java.util.List;
@@ -54,4 +58,11 @@ public class BazaarListFragment extends ListFragment {
         setListAdapter(swingBottomInAnimationAdapter);
     }
 
+    @Override
+    public void onListItemClick(ListView l, View v, int position, long id) {
+        BazaarEntry entry = (BazaarEntry) l.getAdapter().getItem(position);
+        if (!TextUtils.isEmpty(entry.getUrl())) {
+            IntentUtils.openUrl(getActivity(), entry.getUrl());
+        }
+    }
 }

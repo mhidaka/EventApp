@@ -43,7 +43,14 @@ public class BazaarEntryLoader {
                     if(trs.size() >= 3){
                         entry.setName(trs.get(0).text());
                         entry.setTitle(trs.get(1).text());
-                        entry.setSummary(trs.get(2).text());
+
+                        Element summary = trs.get(2);
+                        entry.setSummary(summary.text());
+
+                        Elements a = summary.select("a");
+                        if(!a.isEmpty()){
+                            entry.setUrl(a.attr("href"));
+                        }
                     }
                     entries.add(entry);
                 }

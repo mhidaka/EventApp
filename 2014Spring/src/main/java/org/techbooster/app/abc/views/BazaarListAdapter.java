@@ -1,6 +1,7 @@
 package org.techbooster.app.abc.views;
 
 import android.content.Context;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -60,6 +61,12 @@ public class BazaarListAdapter extends BindableAdapter<BazaarEntry> {
         holder.name.setText(item.getName());
         holder.title.setText(item.getTitle());
         holder.summary.setText(item.getSummary());
+        if(TextUtils.isEmpty(item.getUrl())){
+            holder.urlLinkText.setVisibility(View.GONE);
+        }
+        else{
+            holder.urlLinkText.setVisibility(View.VISIBLE);
+        }
     }
 
     public class ViewHolder {
@@ -70,6 +77,9 @@ public class BazaarListAdapter extends BindableAdapter<BazaarEntry> {
         public TextView title;
         @InjectView(R.id.summary)
         public TextView summary;
+        @InjectView(R.id.url_link_text)
+        public TextView urlLinkText;
+
         public final View root;
 
         public ViewHolder(View root) {

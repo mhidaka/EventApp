@@ -35,7 +35,17 @@
             android:textColor="#999999"
             android:textSize="14sp"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/summary"
+            android:gravity="right"
+            android:text="@string/exhibitor_site"
+            android:id="@+id/url_link_text"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"/>
     </RelativeLayout>
+
 
     <View
         android:layout_width="match_parent"
