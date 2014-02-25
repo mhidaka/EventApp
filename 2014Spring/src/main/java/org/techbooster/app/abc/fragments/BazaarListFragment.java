@@ -1,7 +1,6 @@
 package org.techbooster.app.abc.fragments;
 
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.AdapterView;
@@ -9,16 +8,19 @@ import android.widget.AdapterView;
 import com.android.volley.VolleyError;
 import com.devspark.progressfragment.ProgressFragment;
 import com.etsy.android.grid.StaggeredGridView;
+import com.sys1yagi.indirectinjector.IndirectInjector;
 
 import org.techbooster.app.abc.R;
+import org.techbooster.app.abc.controllers.ActionBarController;
 import org.techbooster.app.abc.loaders.BazaarEntryLoader;
 import org.techbooster.app.abc.models.BazaarEntry;
 import org.techbooster.app.abc.tools.IntentUtils;
 import org.techbooster.app.abc.views.BazaarListAdapter;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+
+import javax.inject.Inject;
 
 public class BazaarListFragment extends ProgressFragment {
 
@@ -33,9 +35,16 @@ public class BazaarListFragment extends ProgressFragment {
 
     private List<BazaarEntry> mBazaarEntries;
 
+    @Inject
+    private ActionBarController mActionBarController;
+
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
+        IndirectInjector.inject(getActivity(), this);
+
+        mActionBarController.setTitle(R.string.menu_bazaar);
 
         setContentView(R.layout.fragment_bazzar);
         mStaggeredGridView = (StaggeredGridView) getView().findViewById(R.id.grid_view);

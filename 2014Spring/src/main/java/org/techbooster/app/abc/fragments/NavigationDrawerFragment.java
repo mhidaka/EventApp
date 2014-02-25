@@ -238,7 +238,6 @@ public class NavigationDrawerFragment extends Fragment {
         }
 
         Menu menu = Menu.values()[position];
-        mActionBarController.setTitle(menu.getTitleResId());
         mFragmentTransitionController.replaceFragment(menu.getFragment());
     }
 
