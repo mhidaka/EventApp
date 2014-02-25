@@ -3,6 +3,9 @@ package org.techbooster.app.abc.fragments;
 import com.sys1yagi.indirectinjector.IndirectInjector;
 
 import org.techbooster.app.abc.R;
+import org.techbooster.app.abc.controllers.ActionBarController;
+import org.techbooster.app.abc.controllers.FragmentTransitionController;
+import org.techbooster.app.abc.tools.IntentUtils;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
@@ -23,9 +26,13 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import javax.inject.Inject;
+
+import butterknife.ButterKnife;
+import butterknife.InjectView;
 
 public class NavigationDrawerFragment extends Fragment {
 
@@ -35,8 +42,37 @@ public class NavigationDrawerFragment extends Fragment {
 
     private static final String PREF_USER_LEARNED_DRAWER = "navigation_drawer_learned";
 
+    enum Menu {
+        TOP(R.string.menu_top, PlaceholderFragment.newInstance(0)),
+        SUMMARY(R.string.menu_summary, PlaceholderFragment.newInstance(1)),
+        CONFERENCE(R.string.menu_conference, PlaceholderFragment.newInstance(2)),
+        BAZAAR(R.string.menu_bazaar, BazaarListFragment.newInstance()),
+        MAP(R.string.menu_map, PlaceholderFragment.newInstance(4)),
+        OFFICIAL_SITE(R.string.menu_official_site, PlaceholderFragment.newInstance(5)),
+        OSS_LICENSE(R.string.menu_open_source_license, PlaceholderFragment.newInstance(6)),;
+
+        private int mTitleResId;
+        private Fragment mFragment;
+
+        Menu(int titleId, Fragment fragment) {
+            mTitleResId = titleId;
+            mFragment = fragment;
+        }
+
+        public int getTitleResId() {
+            return mTitleResId;
+        }
+
+        public Fragment getFragment() {
+            return mFragment;
+        }
+    }
+
     @Inject
-    private NavigationDrawerCallbacks mCallbacks;
+    private FragmentTransitionController mFragmentTransitionController;
+
+    @Inject
+    private ActionBarController mActionBarController;
 
     @Inject
     private DrawerLayout mDrawerLayout;
@@ -44,11 +80,12 @@ public class NavigationDrawerFragment extends Fragment {
     @Inject
     private FrameLayout mFragmentContainerView;
 
-    private ListView mDrawerListView;
+    @InjectView(R.id.menu_list)
+    ListView mDrawerListView;
 
     private ActionBarDrawerToggle mDrawerToggle;
 
-    private int mCurrentSelectedPosition = 0;
+    private int mCurrentSelectedPosition = 3;
 
     private boolean mFromSavedInstanceState;
 
@@ -61,8 +98,6 @@ public class NavigationDrawerFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Read in the flag indicating whether or not the user has demonstrated awareness of the
-        // drawer. See PREF_USER_LEARNED_DRAWER for details.
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getActivity());
         mUserLearnedDrawer = sp.getBoolean(PREF_USER_LEARNED_DRAWER, false);
 
@@ -71,8 +106,6 @@ public class NavigationDrawerFragment extends Fragment {
             mFromSavedInstanceState = true;
         }
 
-        // Select either the default item (0) or the last selected item.
-        selectItem(mCurrentSelectedPosition);
     }
 
     @Override
@@ -82,26 +115,46 @@ public class NavigationDrawerFragment extends Fragment {
 
         setHasOptionsMenu(true);
         setUpNavigationDrawer();
+        if (savedInstanceState == null) {
+            selectItem(mCurrentSelectedPosition);
+        }
+    }
+
+    private boolean isClickFooterView(int position) {
+        return mDrawerListView.getCount() - 1 == position;
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
-        mDrawerListView = (ListView) inflater.inflate(
-                R.layout.fragment_navigation_drawer, container, false);
+                             Bundle savedInstanceState) {
+        View view = inflater.inflate(
+                R.layout.fragment_navigation_drawer, null, false);
+        ButterKnife.inject(this, view);
+
+        ImageView jagLink = (ImageView) inflater.inflate(R.layout.listitem_jag_link, null, false);
+        mDrawerListView.addFooterView(jagLink);
         mDrawerListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if (isClickFooterView(position)) {
+                    IntentUtils.openUrl(getActivity(), getString(R.string.jag_link));
+                    return;
+                }
                 selectItem(position);
             }
         });
-        mDrawerListView.setAdapter(new ArrayAdapter<String>(
-                getActionBar().getThemedContext(),
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),
                 android.R.layout.simple_list_item_1,
-                android.R.id.text1,
-                getResources().getStringArray(R.array.drawer_menu_list)));
+                android.R.id.text1);
+        for (Menu menu : Menu.values()) {
+            adapter.add(getString(menu.getTitleResId()));
+        }
+
+        mDrawerListView.setAdapter(adapter);
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
-        return mDrawerListView;
+
+        return view;
     }
 
     public boolean isDrawerOpen() {
@@ -110,7 +163,7 @@ public class NavigationDrawerFragment extends Fragment {
 
     public void setUpNavigationDrawer() {
 
-        if(mDrawerLayout == null || mFragmentContainerView == null){
+        if (mDrawerLayout == null || mFragmentContainerView == null) {
             Log.i(TAG, "non drawer mode.");
             return;
         }
@@ -183,9 +236,9 @@ public class NavigationDrawerFragment extends Fragment {
         if (mDrawerLayout != null) {
             mDrawerLayout.closeDrawer(mFragmentContainerView);
         }
-        if (mCallbacks != null) {
-            mCallbacks.onNavigationDrawerItemSelected(position);
-        }
+
+        Menu menu = Menu.values()[position];
+        mFragmentTransitionController.replaceFragment(menu.getFragment());
     }
 
     @Override
@@ -196,7 +249,6 @@ public class NavigationDrawerFragment extends Fragment {
     @Override
     public void onDetach() {
         super.onDetach();
-        mCallbacks = null;
     }
 
     @Override
@@ -221,10 +273,5 @@ public class NavigationDrawerFragment extends Fragment {
 
     private ActionBar getActionBar() {
         return ((ActionBarActivity) getActivity()).getSupportActionBar();
-    }
-
-    public static interface NavigationDrawerCallbacks {
-
-        void onNavigationDrawerItemSelected(int position);
     }
 }
