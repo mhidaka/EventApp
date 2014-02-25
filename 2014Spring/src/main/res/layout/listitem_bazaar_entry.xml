@@ -3,8 +3,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              android:padding="8dip">
-
+              android:padding="8dp">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -45,11 +44,13 @@
             android:layout_marginTop="5dp"
             android:layout_gravity="center_horizontal"/>
     </RelativeLayout>
-
-
-    <View
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="1dip"
-        android:background="#cccccc"/>
-
+        android:layout_height="wrap_content"
+        android:background="#cccccc">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            />
+        </LinearLayout>
 </LinearLayout>

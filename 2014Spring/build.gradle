@@ -31,6 +31,7 @@ dependencies {
     compile 'org.jsoup:jsoup:1.7.2'
     compile 'com.nhaarman.listviewanimations:library:2.6.0'
     compile 'com.github.johnkil.android-progressfragment:progressfragment:1.4.0'
+    compile 'com.etsy.android.grid:library:1.0.4'
 
     instrumentTestCompile 'org.mockito:mockito-core:1.9.5'
     instrumentTestCompile 'com.google.dexmaker:dexmaker:1.0'
