@@ -14,6 +14,7 @@ import com.sys1yagi.indirectinjector.IndirectInjector;
 import org.techbooster.app.abc.controllers.ActionBarController;
 import org.techbooster.app.abc.controllers.FragmentTransitionController;
 import org.techbooster.app.abc.tools.DrawerLayoutManager;
+import org.techbooster.app.abc.tools.FragmentHelper;
 
 public class MainActivity extends ActionBarActivity
         implements FragmentTransitionController, ActionBarController {
@@ -56,14 +57,16 @@ public class MainActivity extends ActionBarActivity
     @Override
     public void replaceFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        if (!FragmentHelper.isCurrentFragment(fragmentManager, fragment.getClass())) {
+            FragmentTransaction transaction = fragmentManager.beginTransaction();
 
-        if (fragmentManager.getFragments().size() > 1) {
-            transaction.addToBackStack(null);
+            if (fragmentManager.getFragments().size() > 1) {
+                transaction.addToBackStack(null);
+            }
+            transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                    .replace(R.id.container, fragment)
+                    .commit();
         }
-        transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                .replace(R.id.container, fragment)
-                .commit();
     }
 
     @Override
