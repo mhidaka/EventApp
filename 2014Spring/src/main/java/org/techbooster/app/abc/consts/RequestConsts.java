@@ -12,6 +12,7 @@ public class RequestConsts {
     public final static String CONFERENCE_CONTENT_URL = CONFERENCE_ENTRY_URL + "content/";
     public final static String CONFERENCE_DEV_URL = CONFERENCE_ENTRY_URL + "dev/";
     public final static String CONFERENCE_DEVICE_URL = CONFERENCE_ENTRY_URL + "device/";
+    public final static String CONFERENCE_EFFECTIVE_URL = CONFERENCE_ENTRY_URL + "effective/";
     public final static String CONFERENCE_LT_URL = CONFERENCE_ENTRY_URL + "lt/";
     public final static String CONFERENCE_BUSINESS_URL = CONFERENCE_ENTRY_URL + "business/";
 }

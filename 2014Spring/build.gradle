@@ -32,6 +32,7 @@ dependencies {
     compile 'com.nhaarman.listviewanimations:library:2.6.0'
     compile 'com.github.johnkil.android-progressfragment:progressfragment:1.4.0'
     compile 'com.etsy.android.grid:library:1.0.4'
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
 
     androidTestCompile 'org.mockito:mockito-core:1.9.5'
     androidTestCompile 'com.google.dexmaker:dexmaker:1.0'

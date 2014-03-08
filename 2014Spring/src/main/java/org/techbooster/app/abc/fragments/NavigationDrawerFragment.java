@@ -45,7 +45,7 @@ public class NavigationDrawerFragment extends Fragment {
     enum Menu {
         TOP(R.string.menu_top, PlaceholderFragment.newInstance(0)),
         SUMMARY(R.string.menu_summary, PlaceholderFragment.newInstance(1)),
-        CONFERENCE(R.string.menu_conference, PlaceholderFragment.newInstance(2)),
+        CONFERENCE(R.string.menu_conference, ConferenceFragment.newInstance()),
         BAZAAR(R.string.menu_bazaar, BazaarListFragment.newInstance()),
         MAP(R.string.menu_map, PlaceholderFragment.newInstance(4)),
         OFFICIAL_SITE(R.string.menu_official_site, PlaceholderFragment.newInstance(5)),

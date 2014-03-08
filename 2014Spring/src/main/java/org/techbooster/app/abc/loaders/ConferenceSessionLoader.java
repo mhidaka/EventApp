@@ -49,12 +49,16 @@ public class ConferenceSessionLoader {
                         session.setTrackName(trackName);
                         session.setSessionTitle(tr.select("span.session_title").first().text());
                         session.setSpeakerName(tr.select("span.speaker_name").first().text());
-                        session.setSpeakerProfile(tr.select("span.speaker_profile").first().text());
+                        if (!tr.select("span.speaker_profile").isEmpty()) {
+                            session.setSpeakerProfile(
+                                    tr.select("span.speaker_profile").first().text());
+                        }
                         session.setBeginTime(tr.select("span.starttime").first().text());
                         if (!tr.select("span.session_description").isEmpty()) {
                             session.setDescription(
                                     tr.select("span.session_description").first().text()
-                                            .replace("【 講演内容 】<br />", ""));
+                                            .replace("【 講演内容 】<br />", "")
+                            );
                         }
                         session.setRoom(tr.select("span.roomname").first().text());
 
