@@ -5,12 +5,10 @@ import android.widget.ListView;
 
 import com.android.volley.VolleyError;
 import com.devspark.progressfragment.ProgressFragment;
-import com.etsy.android.grid.StaggeredGridView;
 import com.google.gson.reflect.TypeToken;
 import com.sys1yagi.indirectinjector.IndirectInjector;
 
 import org.techbooster.app.abc.R;
-import org.techbooster.app.abc.controllers.ActionBarController;
 import org.techbooster.app.abc.loaders.ConferenceSessionLoader;
 import org.techbooster.app.abc.models.ConferenceSession;
 import org.techbooster.app.abc.tools.GsonParcer;
@@ -18,8 +16,6 @@ import org.techbooster.app.abc.views.ConferenceSessionAdapter;
 
 import java.util.Collection;
 import java.util.List;
-
-import javax.inject.Inject;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -91,7 +87,9 @@ public class ConferenceSessionFragment extends ProgressFragment {
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putParcelable(STATE_KEY_TRACK_SESSION, GsonParcer.wrap(mConferenceSessions));
+        if (mConferenceSessions != null && !mConferenceSessions.isEmpty()) {
+            outState.putParcelable(STATE_KEY_TRACK_SESSION, GsonParcer.wrap(mConferenceSessions));
+        }
     }
 
     private void setupSessionList(List<ConferenceSession> sessions) {

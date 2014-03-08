@@ -2,7 +2,6 @@ package org.techbooster.app.abc.fragments;
 
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 
@@ -20,7 +19,6 @@ import org.techbooster.app.abc.tools.GsonParcer;
 import org.techbooster.app.abc.tools.IntentUtils;
 import org.techbooster.app.abc.views.BazaarListAdapter;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
