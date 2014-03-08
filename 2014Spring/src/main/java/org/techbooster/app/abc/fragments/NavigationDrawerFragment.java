@@ -85,7 +85,7 @@ public class NavigationDrawerFragment extends Fragment {
 
     private ActionBarDrawerToggle mDrawerToggle;
 
-    private int mCurrentSelectedPosition = 3;
+    private int mCurrentSelectedPosition = 2;
 
     private boolean mFromSavedInstanceState;
 

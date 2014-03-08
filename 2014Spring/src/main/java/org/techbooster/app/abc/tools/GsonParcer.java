@@ -25,7 +25,6 @@ public class GsonParcer {
     public static <T> Parcelable wrap(T instance) {
         try {
             String json = encode(instance);
-            Log.d("moge", json);
             return new Wrapper(json);
         } catch (IOException e) {
             throw new RuntimeException(e);

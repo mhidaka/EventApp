@@ -15,6 +15,8 @@ import org.techbooster.app.abc.R;
 import org.techbooster.app.abc.consts.RequestConsts;
 import org.techbooster.app.abc.controllers.ActionBarController;
 
+import java.lang.reflect.Field;
+
 import javax.inject.Inject;
 
 import butterknife.ButterKnife;
@@ -76,10 +78,10 @@ public class ConferenceFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         IndirectInjector.inject(getActivity(), this);
-
         mActionBarController.setTitle(R.string.menu_conference);
+
         FragmentStatePagerAdapter adapter =
-                new FragmentStatePagerAdapter(getFragmentManager()) {
+                new FragmentStatePagerAdapter(getChildFragmentManager()) {
                     @Override
                     public Fragment getItem(int position) {
                         return Conference.values()[position].mFragment;
@@ -98,4 +100,19 @@ public class ConferenceFragment extends Fragment {
         mViewPager.setAdapter(adapter);
         mPagerSlidingTabStrip.setViewPager(mViewPager);
     }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        try {
+            Field f = Fragment.class.getDeclaredField("mChildFragmentManager");
+            f.setAccessible(true);
+            f.set(this, null);
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+    }
+
 }

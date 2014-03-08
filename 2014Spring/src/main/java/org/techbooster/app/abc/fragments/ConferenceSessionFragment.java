@@ -6,14 +6,17 @@ import android.widget.ListView;
 import com.android.volley.VolleyError;
 import com.devspark.progressfragment.ProgressFragment;
 import com.etsy.android.grid.StaggeredGridView;
+import com.google.gson.reflect.TypeToken;
 import com.sys1yagi.indirectinjector.IndirectInjector;
 
 import org.techbooster.app.abc.R;
 import org.techbooster.app.abc.controllers.ActionBarController;
 import org.techbooster.app.abc.loaders.ConferenceSessionLoader;
 import org.techbooster.app.abc.models.ConferenceSession;
+import org.techbooster.app.abc.tools.GsonParcer;
 import org.techbooster.app.abc.views.ConferenceSessionAdapter;
 
+import java.util.Collection;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -58,28 +61,37 @@ public class ConferenceSessionFragment extends ProgressFragment {
         ButterKnife.inject(this, getView());
 
         setContentShown(false);
+        if (savedInstanceState != null) {
+            mConferenceSessions =
+                    GsonParcer.unwrap(savedInstanceState.getParcelable(STATE_KEY_TRACK_SESSION),
+                            new TypeToken<Collection<ConferenceSession>>() {
+                            }
+                    );
+            setupSessionList(mConferenceSessions);
+        } else {
+            new ConferenceSessionLoader(getActivity()).getSessions(mUrl,
+                    new ConferenceSessionLoader.Listener() {
+                        @Override
+                        public void onSuccess(List<ConferenceSession> sessions) {
+                            if (isResumed() && getActivity() != null) {
+                                mConferenceSessions = sessions;
+                                setupSessionList(sessions);
+                            }
+                        }
 
-        new ConferenceSessionLoader(getActivity()).getSessions(mUrl,
-                new ConferenceSessionLoader.Listener() {
-                    @Override
-                    public void onSuccess(List<ConferenceSession> sessions) {
-                        if (getActivity() != null) {
-                            mConferenceSessions = sessions;
-                            setupSessionList(sessions);
+                        @Override
+                        public void onError(VolleyError error) {
+                            setEmptyText(getString(R.string.network_error));
                         }
                     }
-
-                    @Override
-                    public void onError(VolleyError error) {
-                        setEmptyText(getString(R.string.network_error));
-                    }
-                }
-        );
+            );
+        }
     }
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
+        outState.putParcelable(STATE_KEY_TRACK_SESSION, GsonParcer.wrap(mConferenceSessions));
     }
 
     private void setupSessionList(List<ConferenceSession> sessions) {
