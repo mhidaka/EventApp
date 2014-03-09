@@ -19,4 +19,14 @@
     <string name="menu_official_site">公式サイト</string>
     <string name="menu_open_source_license">オープンソースライセンス</string>
     <string name="exhibitor_site">出典者のサイトへ</string>
+
+    <string name="conference_keynote">基調講演／Reborn</string>
+    <string name="conference_design">デザイン・開発</string>
+    <string name="conference_maker">メーカー・キャリア</string>
+    <string name="conference_content">コンテンツ・ビジネス</string>
+    <string name="conference_dev">開発</string>
+    <string name="conference_device">デバイス・教育</string>
+    <string name="conference_effective">EffectiveAndroidコラボ開発</string>
+    <string name="conference_lt">LT</string>
+    <string name="conference_business">ビジネス</string>
 </resources>

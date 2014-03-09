@@ -8,16 +8,18 @@ import android.widget.AdapterView;
 import com.android.volley.VolleyError;
 import com.devspark.progressfragment.ProgressFragment;
 import com.etsy.android.grid.StaggeredGridView;
+import com.google.gson.reflect.TypeToken;
 import com.sys1yagi.indirectinjector.IndirectInjector;
 
 import org.techbooster.app.abc.R;
 import org.techbooster.app.abc.controllers.ActionBarController;
 import org.techbooster.app.abc.loaders.BazaarEntryLoader;
 import org.techbooster.app.abc.models.BazaarEntry;
+import org.techbooster.app.abc.tools.GsonParcer;
 import org.techbooster.app.abc.tools.IntentUtils;
 import org.techbooster.app.abc.views.BazaarListAdapter;
 
-import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -51,7 +53,11 @@ public class BazaarListFragment extends ProgressFragment {
         setContentShown(false);
 
         if (savedInstanceState != null) {
-            mBazaarEntries = savedInstanceState.getParcelableArrayList(STATE_KEY_BAZAAR_ENTRY);
+            mBazaarEntries = GsonParcer.unwrap(savedInstanceState
+                            .getParcelable(STATE_KEY_BAZAAR_ENTRY),
+                    new TypeToken<Collection<BazaarEntry>>() {
+                    }
+            );
             setupBazaarList(mBazaarEntries);
         } else {
             new BazaarEntryLoader(getActivity()).getEntries(new BazaarEntryLoader.Listener() {
@@ -75,8 +81,7 @@ public class BazaarListFragment extends ProgressFragment {
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         if (mBazaarEntries != null && !mBazaarEntries.isEmpty()) {
-            outState.putParcelableArrayList(STATE_KEY_BAZAAR_ENTRY,
-                    new ArrayList<BazaarEntry>(mBazaarEntries));
+            outState.putParcelable(STATE_KEY_BAZAAR_ENTRY, GsonParcer.wrap(mBazaarEntries));
         }
     }
 
