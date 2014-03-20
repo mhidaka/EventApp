@@ -1,6 +1,7 @@
 package org.techbooster.app.abc.loaders;
 
 import android.content.Context;
+import android.util.Log;
 
 import com.android.volley.VolleyError;
 
@@ -47,13 +48,12 @@ public class ConferenceSessionLoader {
                     for (Element tr : trs) {
                         ConferenceSession session = new ConferenceSession();
                         session.setTrackName(trackName);
-                        session.setSessionTitle(tr.select("span.session_title").first().text());
-                        session.setSpeakerName(tr.select("span.speaker_name").first().text());
+                        session.setSessionTitle(text(tr.select("span.session_title")));
+                        session.setSpeakerName(text(tr.select("span.speaker_name")));
                         if (!tr.select("span.speaker_profile").isEmpty()) {
-                            session.setSpeakerProfile(
-                                    tr.select("span.speaker_profile").first().text());
+                            session.setSpeakerProfile(text(tr.select("span.speaker_profile")));
                         }
-                        session.setBeginTime(tr.select("span.starttime").first().text());
+                        session.setBeginTime(text(tr.select("span.starttime")));
                         if (!tr.select("span.session_description").isEmpty()) {
                             session.setDescription(
                                     tr.select("span.session_description").first().text()
@@ -73,5 +73,14 @@ public class ConferenceSessionLoader {
                 listener.onError(error);
             }
         });
+    }
+
+    private static String text(Elements elms){
+        if (elms == null || elms.isEmpty()) {
+            return "";
+        }
+        Element elm = elms.first();
+        String text = elm.text();
+        return text != null ? text : "";
     }
 }
