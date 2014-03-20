@@ -10,6 +10,11 @@
 
     <string name="network_error">取得失敗しました。</string>
 
+    <string name="map_asset_html">file:///android_asset/access.html</string>
+    <string name="map_link">https://www.google.co.jp/maps/@35.699464,139.772551,18z</string>
+    <string name="map_apps_not_found_error">マップを開くためのアプリが見つかりませんでした。</string>
+    <string name="button_open_map">会場の地図を Google Maps で表示</string>
+
     <string name="jag_link">http://www.android-group.jp/</string>
     <string name="menu_top">開催にあたって</string>
     <string name="menu_summary">イベント概要</string>
