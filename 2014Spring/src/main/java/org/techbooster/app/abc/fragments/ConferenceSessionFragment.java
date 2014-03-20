@@ -58,13 +58,15 @@ public class ConferenceSessionFragment extends ProgressFragment {
 
         setContentShown(false);
         if (savedInstanceState != null) {
-            mConferenceSessions =
-                    GsonParcer.unwrap(savedInstanceState.getParcelable(STATE_KEY_TRACK_SESSION),
-                            new TypeToken<Collection<ConferenceSession>>() {
-                            }
-                    );
-            setupSessionList(mConferenceSessions);
-        } else {
+            if (savedInstanceState.containsKey(STATE_KEY_TRACK_SESSION)) {
+                mConferenceSessions =
+                        GsonParcer.unwrap(savedInstanceState.getParcelable(STATE_KEY_TRACK_SESSION),
+                                new TypeToken<Collection<ConferenceSession>>() {
+                                }
+                        );
+            }
+        }
+        if (mConferenceSessions == null || mConferenceSessions.isEmpty()) {
             new ConferenceSessionLoader(getActivity()).getSessions(mUrl,
                     new ConferenceSessionLoader.Listener() {
                         @Override
@@ -81,6 +83,9 @@ public class ConferenceSessionFragment extends ProgressFragment {
                         }
                     }
             );
+        }
+        else{
+            setupSessionList(mConferenceSessions);
         }
     }
 
