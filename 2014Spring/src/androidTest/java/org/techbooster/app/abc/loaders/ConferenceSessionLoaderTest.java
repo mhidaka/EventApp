@@ -8,8 +8,7 @@ import org.mockito.InjectMocks;
 import org.mockito.MockitoAnnotations;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
-import org.techbooster.app.abc.consts.RequestConsts;
-import org.techbooster.app.abc.models.BazaarEntry;
+import org.techbooster.app.abc.consts.UrlConsts;
 import org.techbooster.app.abc.models.ConferenceSession;
 import org.techbooster.app.abc.testtools.AssetsLoader;
 import org.techbooster.app.abc.tools.VolleyManager;
@@ -59,7 +58,7 @@ public class ConferenceSessionLoaderTest extends InstrumentationTestCase {
 
         final CountDownLatch countDownLatch = new CountDownLatch(1);
 
-        mConferenceSessionLoader.getSessions(RequestConsts.CONFERENCE_KEYNOTE_URL,
+        mConferenceSessionLoader.getSessions(UrlConsts.CONFERENCE_KEYNOTE_URL,
                 new ConferenceSessionLoader.Listener() {
                     @Override
                     public void onSuccess(List<ConferenceSession> sessions) {
