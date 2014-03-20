@@ -16,6 +16,7 @@
     <string name="menu_conference">カンファレンス</string>
     <string name="menu_bazaar">バザール</string>
     <string name="menu_map">会場</string>
+    <string name="menu_obft">OBFT</string>
     <string name="menu_official_site">公式サイト</string>
     <string name="menu_open_source_license">オープンソースライセンス</string>
     <string name="exhibitor_site">出展者のサイトへ</string>

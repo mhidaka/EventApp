@@ -1,6 +1,6 @@
 package org.techbooster.app.abc.consts;
 
-public class RequestConsts {
+public class UrlConsts {
 
     public final static String BASE_URL = "http://www.android-group.jp/conference/abc2014s/";
     public final static String BAZAAR_ENTRY_URL = BASE_URL + "bazaar/";
@@ -15,4 +15,9 @@ public class RequestConsts {
     public final static String CONFERENCE_EFFECTIVE_URL = CONFERENCE_ENTRY_URL + "effective/";
     public final static String CONFERENCE_LT_URL = CONFERENCE_ENTRY_URL + "lt/";
     public final static String CONFERENCE_BUSINESS_URL = CONFERENCE_ENTRY_URL + "business/";
+
+    //Define duplicated value, because context to be used is different.
+    public final static String OFFICIAL_SITE_URL =
+            "http://www.android-group.jp/conference/abc2014s/";
+    public final static String OBFT_URL = "http://openbeacon.android-group.jp/?page_id=64";
 }

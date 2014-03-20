@@ -1,13 +1,7 @@
 package org.techbooster.app.abc.fragments;
 
-import com.sys1yagi.indirectinjector.IndirectInjector;
-
-import org.techbooster.app.abc.R;
-import org.techbooster.app.abc.controllers.ActionBarController;
-import org.techbooster.app.abc.controllers.FragmentTransitionController;
-import org.techbooster.app.abc.tools.IntentUtils;
-
 import android.app.Activity;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -29,6 +23,14 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.sys1yagi.indirectinjector.IndirectInjector;
+
+import org.techbooster.app.abc.R;
+import org.techbooster.app.abc.consts.UrlConsts;
+import org.techbooster.app.abc.controllers.ActionBarController;
+import org.techbooster.app.abc.controllers.FragmentTransitionController;
+import org.techbooster.app.abc.tools.IntentUtils;
+
 import javax.inject.Inject;
 
 import butterknife.ButterKnife;
@@ -43,13 +45,26 @@ public class NavigationDrawerFragment extends Fragment {
     private static final String PREF_USER_LEARNED_DRAWER = "navigation_drawer_learned";
 
     enum Menu {
-        TOP(R.string.menu_top, PlaceholderFragment.newInstance(0)),
-        SUMMARY(R.string.menu_summary, PlaceholderFragment.newInstance(1)),
+        TOP(R.string.menu_top, TopFragment.newInstance()),
+        SUMMARY(R.string.menu_summary, EventSummaryFragment.newInstance()),
         CONFERENCE(R.string.menu_conference, ConferenceFragment.newInstance()),
         BAZAAR(R.string.menu_bazaar, BazaarListFragment.newInstance()),
-        MAP(R.string.menu_map, PlaceholderFragment.newInstance(4)),
-        OFFICIAL_SITE(R.string.menu_official_site, PlaceholderFragment.newInstance(5)),
-        OSS_LICENSE(R.string.menu_open_source_license, PlaceholderFragment.newInstance(6)),;
+        MAP(R.string.menu_map, AccessFragment.newInstance()),
+        OFFICIAL_SITE(R.string.menu_official_site, null) {
+            @Override
+            public void transitTo(Context context,
+                                  FragmentTransitionController fragmentTransitionController) {
+                IntentUtils.openUrl(context, UrlConsts.OFFICIAL_SITE_URL);
+            }
+        },
+        OBFT(R.string.menu_obft, null) {
+            @Override
+            public void transitTo(Context context,
+                                  FragmentTransitionController fragmentTransitionController) {
+                IntentUtils.openUrl(context, UrlConsts.OBFT_URL);
+            }
+        },
+        OSS_LICENSE(R.string.menu_open_source_license, OpenSourceLicenseFragment.newInstance()),;
 
         private int mTitleResId;
         private Fragment mFragment;
@@ -63,8 +78,9 @@ public class NavigationDrawerFragment extends Fragment {
             return mTitleResId;
         }
 
-        public Fragment getFragment() {
-            return mFragment;
+        public void transitTo(Context context,
+                              FragmentTransitionController fragmentTransitionController) {
+            fragmentTransitionController.replaceFragment(mFragment);
         }
     }
 
@@ -169,14 +185,11 @@ public class NavigationDrawerFragment extends Fragment {
         }
 
         mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
-        // set up the drawer's list view with items and click listener
 
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeButtonEnabled(true);
 
-        // ActionBarDrawerToggle ties together the the proper interactions
-        // between the navigation drawer and the action bar app icon.
         mDrawerToggle = new ActionBarDrawerToggle(
                 getActivity(),
                 mDrawerLayout,
@@ -202,8 +215,7 @@ public class NavigationDrawerFragment extends Fragment {
                 }
 
                 if (!mUserLearnedDrawer) {
-                    // The user manually opened the drawer; store this flag to prevent auto-showing
-                    // the navigation drawer automatically in the future.
+
                     mUserLearnedDrawer = true;
                     SharedPreferences sp = PreferenceManager
                             .getDefaultSharedPreferences(getActivity());
@@ -238,7 +250,7 @@ public class NavigationDrawerFragment extends Fragment {
         }
 
         Menu menu = Menu.values()[position];
-        mFragmentTransitionController.replaceFragment(menu.getFragment());
+        menu.transitTo(getActivity(), mFragmentTransitionController);
     }
 
     @Override

@@ -12,7 +12,7 @@ import com.astuetz.PagerSlidingTabStrip;
 import com.sys1yagi.indirectinjector.IndirectInjector;
 
 import org.techbooster.app.abc.R;
-import org.techbooster.app.abc.consts.RequestConsts;
+import org.techbooster.app.abc.consts.UrlConsts;
 import org.techbooster.app.abc.controllers.ActionBarController;
 
 import java.lang.reflect.Field;
@@ -26,23 +26,23 @@ public class ConferenceFragment extends Fragment {
 
     enum Conference {
         KEYNOTE(R.string.conference_keynote,
-                ConferenceSessionFragment.newInstance(RequestConsts.CONFERENCE_KEYNOTE_URL)),
+                ConferenceSessionFragment.newInstance(UrlConsts.CONFERENCE_KEYNOTE_URL)),
         DESIGN(R.string.conference_design,
-                ConferenceSessionFragment.newInstance(RequestConsts.CONFERENCE_DESIGN_URL)),
+                ConferenceSessionFragment.newInstance(UrlConsts.CONFERENCE_DESIGN_URL)),
         MAKER(R.string.conference_maker,
-                ConferenceSessionFragment.newInstance(RequestConsts.CONFERENCE_MAKER_URL)),
+                ConferenceSessionFragment.newInstance(UrlConsts.CONFERENCE_MAKER_URL)),
         CONTENT(R.string.conference_content,
-                ConferenceSessionFragment.newInstance(RequestConsts.CONFERENCE_CONTENT_URL)),
+                ConferenceSessionFragment.newInstance(UrlConsts.CONFERENCE_CONTENT_URL)),
         DEV(R.string.conference_dev,
-                ConferenceSessionFragment.newInstance(RequestConsts.CONFERENCE_DEV_URL)),
+                ConferenceSessionFragment.newInstance(UrlConsts.CONFERENCE_DEV_URL)),
         DEVICE(R.string.conference_device,
-                ConferenceSessionFragment.newInstance(RequestConsts.CONFERENCE_DEVICE_URL)),
+                ConferenceSessionFragment.newInstance(UrlConsts.CONFERENCE_DEVICE_URL)),
         EFFECTIVE(R.string.conference_effective,
-                ConferenceSessionFragment.newInstance(RequestConsts.CONFERENCE_EFFECTIVE_URL)),
+                ConferenceSessionFragment.newInstance(UrlConsts.CONFERENCE_EFFECTIVE_URL)),
         LT(R.string.conference_lt,
-                ConferenceSessionFragment.newInstance(RequestConsts.CONFERENCE_LT_URL)),
+                ConferenceSessionFragment.newInstance(UrlConsts.CONFERENCE_LT_URL)),
         BUSINESS(R.string.conference_business,
-                ConferenceSessionFragment.newInstance(RequestConsts.CONFERENCE_BUSINESS_URL));
+                ConferenceSessionFragment.newInstance(UrlConsts.CONFERENCE_BUSINESS_URL));
 
         private Fragment mFragment;
         private int mTitleResId;
